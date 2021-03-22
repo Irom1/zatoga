@@ -11,14 +11,12 @@
     {
       "src": "/media/icon.png",
       "type": "image/png",
-      "sizes": "512x512",
-      "purpose": "any"
+      "sizes": "512x512"
     },
     {
       "src": "/media/icon-x192.png",
       "type": "image/png",
-      "sizes": "192x192",
-      "purpose": "any"
+      "sizes": "192x192"
     },
     {
       "src": "/media/maskable-icon.png",
