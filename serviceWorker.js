@@ -55,7 +55,7 @@ const assets = [
   "/app/games/super-mario/Scripts/sounds_noop.js",
   "/app/games/super-mario/Scripts/sounds.js",
   "/app/games/super-mario/Scripts/testlevels.js",
-  "/app/games/tweety-bird/"
+  "/app/games/tweety-bird/",
   "/app/games/tweety-bird/dist/click.js",
   "/app/games/tweety-bird/dist/main.js",
   "/app/games/tweety-bird/images/background-night.png",
@@ -65,7 +65,6 @@ const assets = [
   "/app/games/tweety-bird/images/fav-bird.ico",
   "/app/games/tweety-bird/images/pipe-green1.png",
   "/app/games/tweety-bird/images/pipe-green2.png",
-  "/app/games/tweety-bird/index.html",
   "/app/games/tweety-bird/styles.css"
 ];
 
