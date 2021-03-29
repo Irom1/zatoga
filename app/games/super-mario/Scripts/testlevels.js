@@ -79,7 +79,7 @@ var definedLevels = [
         ['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
         ['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
         ['', '', '', '', '', '', 'coinbox', '', '', '', 'brown_block', 'brown_block', 'brown_block', 'grass_top', 'soil'],
-        ['', '', '', '', '', '', 'mushroombox', '', '', '', 'brown_block', 'brown_block', 'brown_block', 'grass_top', 'soil'],
+        ['', '', '', '', '', '', 'muiltiple_coinbox', '', '', '', 'brown_block', 'brown_block', 'brown_block', 'grass_top', 'soil'],
         ['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
         ['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
         ['', '', '', '', '', '', '', '', '', '', '', '', '', 'grass_top', 'soil'],
