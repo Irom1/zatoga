@@ -81,6 +81,6 @@ img.small {
     transform: rotate(359deg);
   }
 }
-.online {
+.online, .beta {
   display: none;
 }

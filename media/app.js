@@ -1,6 +1,7 @@
 // Know if in the app
 var inApp = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
 var onApp = (location.pathname == "/app/");
+var beta = (location.host == "zatoga.irom1.repl.co");
 
 // this event will only fire if the user does not have the pwa installed
 window.addEventListener('beforeinstallprompt', (event) => {
@@ -43,6 +44,13 @@ if(inApp) {
 // Online only content
 if(navigator.onLine) {
   var x = document.getElementsByClassName("online");
+  for(i=0;i<x.length;i++) {
+    x[i].style.display = "block";
+  }
+}
+// Beta only content
+if(beta) {
+  var x = document.getElementsByClassName("beta");
   for(i=0;i<x.length;i++) {
     x[i].style.display = "block";
   }

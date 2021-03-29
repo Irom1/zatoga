@@ -1,4 +1,4 @@
-﻿/*
+/*
  * *****
  * WRITTEN BY FLORIAN RAPPL, 2012.
  * florian-rappl.de
@@ -1334,7 +1334,10 @@ var Mario = Hero.extend({
     if(window.cheat || localStorage.marioCheat == "true") {
       this.setCoins(this.coins + 1);
       this.shooter();
-      //this.invincible();
+    }
+    if(window.skipLevel || localStorage.marioLevel == "true") {
+      this.level.nextLoad();
+      this.invincible();
     }
     // End cheat
 	},
