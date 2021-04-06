@@ -336,7 +336,7 @@ var definedLevels = [
       ['', '', '', 'brown_block', 'coin', 'coin', '', '', '', '', '', 'brown_block', '', 'stone', ''],
       ['', '', '', 'brown_block', 'coin', 'coin', '', 'staticplant', 'brown_block', 'brown_block', 'brown_block', 'brown_block', '', 'stone', ''],
       ['', '', '', 'brown_block', 'coin', 'coin', 'coin', 'coin', 'coin', 'coin', '', 'brown_block', 'spikedturtle', 'stone', ''],
-      ['', '', '', 'brown_block', 'brown_block', 'brown_block', 'brown_block', 'mushroombox', '', '', '', 'brown_block', 'brown_block', 'stone', ''],
+      ['', '', '', 'brown_block', 'brown_block', 'brown_block', 'brown_block', '', '', '', '', 'brown_block', 'brown_block', 'stone', ''],
       ['', '', '', 'brown_block', '', '', '', '', '', '', '', '', '', 'stone', ''],
       ['', '', '', 'brown_block', '', '', '', '', '', '', '', '', '', 'stone', ''],
       ['', '', '', 'brown_block', '', '', '', '', '', '', '', '', '', 'stone', ''],

