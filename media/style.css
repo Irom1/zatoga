@@ -87,8 +87,13 @@ img.small {
     transform: rotate(359deg);
   }
 }
-.online, .beta, .login {
+.online, .beta, .login, .share {
   display: none;
+}
+a.share svg {
+  height: 15px;
+  display: inline-block;
+  width: 25px;
 }
 .login {
   width:100%;

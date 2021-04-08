@@ -70,10 +70,28 @@ if(onApp) {
   ];
   var message = document.getElementById("message");
   message.innerText = messages[Math.floor(Math.random() * messages.length)];
-  var games = [
+  // Prep for v3
+  /*var games = [
     {"name":"Doodle Jump","url":"/app/games/doodle-jump/"},
     {"name":"2048 Game","url":"/app/games/2048.html"}
-  ];
+  ];*/
+}
+
+// Sharing stuff
+if(navigator.share) {
+  var x = document.getElementsByClassName("share");
+  for(i=0;i<x.length;i++) {
+    x[i].style.display = "block";
+    x[i].addEventListener('click', event => {
+      navigator.share({
+        title: 'ZatogaApp',
+        text: 'Install the PWA on any device and easily get distracted!',
+        url: 'https://zato.ga/'
+      }).then(() => {
+        console.log('Thanks for sharing!');
+      }).catch(console.error);
+    });
+  }
 }
 
 // Tracker stuff
