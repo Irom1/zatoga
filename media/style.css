@@ -69,9 +69,16 @@ img.rotate {
   animation: rotation 2s infinite linear;
   width: 300px;
 }
+img.rotate.fast {
+  animation: rotation 1s infinite linear;
+}
 img.small {
   width: 75px;
   vertical-align: middle;
+}
+img.center {
+  width: 150px;
+  margin-left: calc(50% - 75px);
 }
 .small {
   display: inline;
@@ -95,7 +102,7 @@ a.share svg {
   display: inline-block;
   width: 25px;
 }
-.login {
+.login, .loading {
   width:100%;
   height:100%;
   position: fixed;
@@ -105,4 +112,5 @@ a.share svg {
   background-color: #000000;
   padding: 5px;
   box-sizing: border-box;
+  transition: all 1s;
 }

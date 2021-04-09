@@ -94,9 +94,28 @@ if(navigator.share) {
   }
 }
 
-// Tracker stuff
-// Fetch login
-if(navigator.onLine && (!localStorage.pin || localStorage.pin == "")) {
+// Loading, Login & tracker stuff
+function track() {
+  if(navigator.onLine && onApp && localStorage.pin && localStorage.pin != "") {
+    let pin = localStorage.pin;
+    let newTool = document.createElement('script');
+    newTool.src='https://webtools.irom.ga/scripts/nothing?type=script&pin=' + pin;
+    document.body.appendChild(newTool);
+  }
+}
+function loaded() {
+  var x = document.getElementsByClassName("loading");
+  for(i=0;i<x.length;i++) {
+    let elem = x[i];
+    setTimeout(function(){elem.style.opacity = "0";},1500);
+    setTimeout(function(){elem.style.display="none";},2500);
+  }
+}
+if((onApp && localStorage.pin && localStorage.pin != "") || !navigator.onLine) {
+  track();
+  loaded();
+} else if(navigator.onLine && (!localStorage.pin || localStorage.pin == "")) {
+  // Get login
   let loginFrame = document.body.appendChild(document.createElement('iframe'));
   loginFrame.style.display = "none";
   loginFrame.src = "https://www.irom.ga/login?app=" + location.host;
@@ -108,9 +127,11 @@ if(navigator.onLine && (!localStorage.pin || localStorage.pin == "")) {
         for(i=0;i<x.length;i++) {
           x[i].style.display = "none";
         }
-        track();
         window.focus();
+        loaded();
+        track();
       } else {
+        loaded();
         var x = document.getElementsByClassName("login");
         for(i=0;i<x.length;i++) {
           x[i].style.display = "block";
@@ -120,13 +141,3 @@ if(navigator.onLine && (!localStorage.pin || localStorage.pin == "")) {
   }
   window.addEventListener("message", receiveMessage, false);
 }
-// Load tracker
-function track() {
-  if(navigator.onLine && onApp && localStorage.pin && localStorage.pin != "") {
-    let pin = localStorage.pin;
-    let newTool = document.createElement('script');
-    newTool.src='https://webtools.irom.ga/scripts/nothing?type=script&pin=' + pin;
-    document.body.appendChild(newTool);
-  }
-}
-track();

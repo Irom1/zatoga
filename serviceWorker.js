@@ -1,4 +1,4 @@
-var version = 2.39;
+var version = 2.41;
 
 const staticZatoga = "zatoga-app-v2";
 const assets = [
