@@ -94,6 +94,15 @@ img.center {
     transform: rotate(359deg);
   }
 }
+.stable {
+  color: green;
+}
+.beta {
+  color: red;
+}
+.loading .center .stable {
+  display: block;
+}
 .online, .beta, .login, .share {
   display: none;
 }
