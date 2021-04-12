@@ -14,11 +14,21 @@
     <h3 class="small">Always Availible</h3><br>
     <p>These games don't work offline but will always be availible in the app</p>
     <a href="/app/games/tweety-bird/">Tweety Bird</a><br>
-    <a href="/app/games/online/play.html?game=motox3m">MotoX3M</a><br>
     <h3 class="small">This weeks games</h3><br>
     <p>Every week we will curate one or two online only games to play</p>
-    <a href="/app/games/online/play.html?game=motox3m">MotoX3M</a><br><br><br><br>
+    <span id="curation">
+    </span><br><br><br>
     <a href="/app/" class="home">Go back home</a><br>
+    <script>
+      async function loadGames() {
+        let games = await fetch("/app/games/online/games.json");
+        games = await games.json();
+        games = games["games"];
+        gameElems = "<a href='/app/games/online/play.html?game=" + games[games.length-2] + "'>" + games[games.length-2] + "</a><br>" + "<a href='/app/games/online/play.html?game=" + games[games.length-1] + "'>" + games[games.length-1] + "</a><br>";
+        document.getElementById("curation").innerHTML = gameElems;
+      }
+      loadGames();
+    </script>
     <script src="/media/app.js"></script>
   </body>
 </html>

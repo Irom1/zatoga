@@ -27,5 +27,6 @@ if(inApp) {
 }
 let params = (new URL(document.location)).searchParams;
 let game = params.get("game");
+game = game.toLowerCase().replace(" ","-");
 document.getElementsByTagName("iframe")[0].src = "https://proxy.irom.ga/~html5-games.io/game/" + game + "/";
 </script>
