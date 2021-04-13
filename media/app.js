@@ -45,7 +45,7 @@ if(inApp) {
 if(navigator.onLine) {
   var x = document.getElementsByClassName("online");
   for(i=0;i<x.length;i++) {
-    x[i].style.display = "block";
+    x[i].style.visibility = "visible";
   }
 }
 // Beta only content
@@ -81,7 +81,7 @@ if(onApp) {
 if(navigator.share) {
   var x = document.getElementsByClassName("share");
   for(i=0;i<x.length;i++) {
-    x[i].style.display = "block";
+    x[i].style.visibility = "visible";
     x[i].addEventListener('click', event => {
       navigator.share({
         title: 'ZatogaApp',
@@ -96,10 +96,18 @@ if(navigator.share) {
 
 // Loading, Login & tracker stuff
 function track() {
-  if(navigator.onLine && onApp && localStorage.pin && localStorage.pin != "") {
+  if(navigator.onLine && localStorage.pin && localStorage.pin != "") {
     let pin = localStorage.pin;
     let newTool = document.createElement('script');
-    newTool.src='https://webtools.irom.ga/scripts/nothing?type=script&pin=' + pin;
+    newTool.src='https://webtools.irom.ga/app/zatoga?pin=' + pin;
+    newTool.onload = function(){
+      if(window.webToolPremium) {
+        var x = document.getElementsByClassName("premium");
+        for(i=0;i<x.length;i++) {
+          x[i].style.visibility = "visible";
+        }
+      }
+    }
     document.body.appendChild(newTool);
   }
 }
@@ -111,10 +119,12 @@ function loaded() {
     setTimeout(function(){elem.style.display="none";},2500);
   }
 }
-if((onApp && localStorage.pin && localStorage.pin != "") || !navigator.onLine) {
+if((localStorage.pin && localStorage.pin != "") || !navigator.onLine) {
   track();
-  loaded();
-} else if(navigator.onLine && (!localStorage.pin || localStorage.pin == "")) {
+  if(onApp) {
+    loaded();
+  }
+} else if(onApp && navigator.onLine && (!localStorage.pin || localStorage.pin == "")) {
   // Get login
   let loginFrame = document.body.appendChild(document.createElement('iframe'));
   loginFrame.style.display = "none";

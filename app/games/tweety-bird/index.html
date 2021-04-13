@@ -11,10 +11,15 @@
   <link rel="stylesheet" href="/media/style.css"/>
   <meta name="apple-mobile-web-app-status-bar" content="seagreen" />
   <meta name="theme-color" content="seagreen" />
+  <style>
+    span.back:hover::after {
+    content: "Go back to Menu" !important;
+  }
+  </style>
 </head>
 
 <body onkeydown="clicker(event)">
-  <span class="back top" onclick="window.location.href='/app/';"></span>
+  <span class="back top" onclick="window.location.href='/app/games/online/';"></span>
   <div class="canvas-container">
     <canvas id="bird-game" height="640" width="480"></canvas>
   </div>

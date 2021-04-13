@@ -106,8 +106,11 @@ img.center {
 .loading .center .stable {
   display: block;
 }
-.online, .beta, .login, .share {
+.beta, .login {
   display: none;
+}
+.online, .share, .premium {
+  visibility: hidden;
 }
 a.share svg {
   height: 15px;
