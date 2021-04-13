@@ -97,7 +97,7 @@ img.center {
     transform: rotate(359deg);
   }
 }
-.stable {
+.basic {
   color: green;
 }
 .beta {
@@ -106,7 +106,7 @@ img.center {
 .premium {
   color: deepskyblue;
 }
-.loading .center .stable {
+.loading .center .basic {
   display: block;
 }
 /*.beta, .premium, .login {
