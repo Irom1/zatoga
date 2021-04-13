@@ -107,9 +107,9 @@ img.center {
 .premium {
   color: deepskyblue;
 }
-/*.beta, .premium, .login {
+.login {
   display: none;
-}*/
+}
 .shaddow {
   visibility: hidden;
   transition: 0.5s opacity;
