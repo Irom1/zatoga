@@ -103,13 +103,22 @@ img.center {
 .beta {
   color: red;
 }
+.premium {
+  color: deepskyblue;
+}
 .loading .center .stable {
   display: block;
 }
-.beta, .login {
+/*.beta, .premium, .login {
+  display: none;
+}*/
+.shaddow {
+  visibility: hidden;
+}
+.hide {
   display: none;
 }
-.online, .share, .premium {
+.online, .share {
   visibility: hidden;
 }
 a.share svg {

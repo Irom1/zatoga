@@ -2,6 +2,7 @@
 var inApp = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
 var onApp = (location.pathname == "/app/");
 var beta = (location.host == "zatoga.irom1.repl.co");
+let stable = !beta;
 
 // this event will only fire if the user does not have the pwa installed
 window.addEventListener('beforeinstallprompt', (event) => {
@@ -88,7 +89,7 @@ if(navigator.share) {
         text: 'Install the PWA on any device and easily get distracted!',
         url: 'https://zato.ga/'
       }).then(() => {
-        console.log('Thanks for sharing!');
+        //console.log('Thanks for sharing!');
       }).catch(console.error);
     });
   }
@@ -104,7 +105,14 @@ function track() {
       if(window.webToolPremium) {
         var x = document.getElementsByClassName("premium");
         for(i=0;i<x.length;i++) {
-          x[i].style.visibility = "visible";
+          if(stable || !x[i].classList.contains("stable")) {
+            x[i].style.visibility = "visible";
+            x[i].style.display = "inherit";
+          }
+        }
+        x = document.getElementsByClassName("basic");
+        for(i=0;i<x.length;i++) {
+          x[i].style.display = "none";
         }
       }
     }
