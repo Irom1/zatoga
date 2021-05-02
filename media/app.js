@@ -19,7 +19,7 @@ if ("serviceWorker" in navigator) {
       .register("/serviceWorker.js")
       .then(function(registration) {
 		    registration.onupdatefound = function() {
-          if(onApp) {
+          if(inApp) {
             alert("Updating app...");
             location.reload();
           }
@@ -150,11 +150,11 @@ function loaded() {
   }
 }
 if(!navigator.onLine || (localStorage.pin && localStorage.pin != "")) {
-  // Let users in they are already logged in or offline 
+  // Let users in & track them they are already logged in or offline 
+  track();
   if(onApp) {
     loaded();
   }
-  track();
 } else if(onApp && navigator.onLine && (!localStorage.pin || localStorage.pin == "")) {
   // Get login
   let loginFrame = document.body.appendChild(document.createElement('iframe'));
