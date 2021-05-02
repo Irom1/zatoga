@@ -149,8 +149,8 @@ function loaded() {
     setTimeout(function(){elem.style.display="none";},2500);
   }
 }
-if(!navigator.onLine || (localStorage.pin && localStorage.pin != "") {
-  // Let users not be tracked if offline
+if(!navigator.onLine || (localStorage.pin && localStorage.pin != "")) {
+  // Let users in they are already logged in or offline 
   if(onApp) {
     loaded();
     track();
