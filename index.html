@@ -16,10 +16,18 @@
     <img class="rotate" src="/media/icon.png"/>
     <h1>Welcome to Zatoga</h1>
     <h2>The easiest way to get distracted</h2>
-    <a onclick="window.installApp.prompt();" id="installApp">Install App</a>
-    <span id="launchApp"><a onclick='window.open("/app/");'>Launch App</a><br>
-    <a onclick='window.open("https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Developer_guide/Installing#what_browsers_support_installation");'>How to install on smartphone?</a><br>
-    <a onclick='window.open("https://support.google.com/chrome/answer/9658361?co=GENIE.Platform%3DDesktop&hl=en&oco=1");'>How to install on Chrome Desktop?</a></span>
+    <a onclick="window.installApp.prompt();" id="installApp" style="width:100%;max-width:750px;margin:auto;">Install App</a>
+    <div id="launchApp" style="width:100%;max-width:750px;margin:auto;">
+      <div style="background-color:red;border-radius:10px;padding: 2px;">
+        <h3>Notice</h3>
+        <p>If you are in chrome please wait a few seconds for the install button to appear. If it doesn't appear try reloading the page.<br><br>
+        If that doesn't work or you are not using chrome, please use the links below for information on how to install zatoga.<br><br>
+        Once you have installed the app you have to open it from your app menu & the install button will not appear here.
+        </p>
+      </div><br>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Developer_guide/Installing#what_browsers_support_installation" target="_blank">How to install on a smartphone?</a><br>
+      <a href="https://support.google.com/chrome/answer/9658361?co=GENIE.Platform%3DDesktop&hl=en&oco=1" target="_blank">How to install with Chrome Desktop?</a>
+    </div>
     <script src="/media/app.js"></script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-var version = 2.63;
+var version = 2.65;
 
 const staticZatoga = "zatoga-app-v2";
 const assets = [
@@ -60,8 +60,7 @@ const assets = [
   "/app/games/super-mario/Scripts/sounds.js",
   "/app/games/super-mario/Scripts/testlevels.js",
   "/app/games/online/",
-  "/app/games/online/play.html",
-  "/app/games/online/archive.html"
+  "/app/games/online/play.html"
 ];
 
 self.addEventListener("install", installEvent => {
