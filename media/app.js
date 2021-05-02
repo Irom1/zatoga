@@ -48,6 +48,19 @@ if(navigator.onLine) {
   for(i=0;i<x.length;i++) {
     x[i].style.visibility = "visible";
   }
+// Offline only content
+} else {
+  x = document.getElementsByClassName("online");
+  for(i=0;i<x.length;i++) {
+    x[i].style.display = "none";
+  }
+  var x = document.getElementsByClassName("offline");
+  for(i=0;i<x.length;i++) {
+    x[i].style.visibility = "visible";
+    x[i].style.display = "inherit";
+    let elem = x[i];
+    setTimeout(function(){elem.style.opacity = 1;},500);
+  }
 }
 // Beta only content
 if(beta) {

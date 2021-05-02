@@ -11,23 +11,28 @@
   </head>
   <body>
     <h1 class="center">Online Games</span></h1>
-    <h3 class="small">Always Availible</h3><br>
-    <p>These games don't work offline but will always be availible in the app</p>
-    <a href="/app/games/tweety-bird/">▶️️️ ️️Tweety Bird</a><br>
-    <h3 class="small">This weeks games</h3><br>
-    <p>Every week our editors will curate one or two online only games to play</p>
-    <span id="curation"></span>
-    <span class="premium shaddow">
-      <a href="/app/games/online/archive.html">View complete Premium Collection</a><br>
+    <p>These games don't work offline but will always be availible in the app. If any games ask you to login - don't try to - it won't work.<br><br>For some reason they only work on certain devices and take some time to load. You know your device isn't compatible if you get a "game locked" message upon opening.</p>
+    <span class="premium hide">
+      <p>You have access to the latest two games because you have premium!</p>
+      <span id="curation"></span>
     </span>
-    <a href="/app/" class="home">Go back home</a><br>
+    <span id="completeCollection"></span>
+    <a href="/app/" class="home">Go back home</a>
     <script>
       async function loadGames() {
+        // Main load
         let games = await fetch("/app/games/online/games.json");
         games = await games.json();
         games = games["games"];
-        let gameElems = "<a href='/app/games/online/play.html?game=" + games[games.length-2] + "'>▶️️️ " + games[games.length-2] + "</a><br>" + "<a href='/app/games/online/play.html?game=" + games[games.length-1] + "'>▶️️️ " + games[games.length-1] + "</a><br>";
+        // Premium Curation
+        let gameElems = "<a href='/app/games/online/play.html?game=" + games[games.length-1] + "'>▶️️️ " + games[games.length-1] + "</a><br>" + "<a href='/app/games/online/play.html?game=" + games[games.length-2] + "'>▶️️️ " + games[games.length-2] + "</a><br>";
         document.getElementById("curation").innerHTML = gameElems;
+        // Complete colection
+        gameElems = "";
+        for(var count=games.length-3;count>=0;count--) {
+          gameElems += "<a href='/app/games/online/play.html?game=" + games[count] + "'>▶️️️ " + games[count] + "</a><br>";
+        }
+        document.getElementById("completeCollection").innerHTML = gameElems;
       }
       loadGames();
     </script>

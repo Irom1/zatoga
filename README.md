@@ -5,8 +5,7 @@ An offline PWA to easily get distracted with by:
   * Chrome Dino
   * 2048 Game
   * Super Mario
-  * Tweety Bird
-* more features to come soon...
+* Playing an entire collection of more advanced online games which have been proxied
 
 
 ### Hosting:
@@ -19,7 +18,7 @@ An offline PWA to easily get distracted with by:
 ### Credits
 The Progressive Web App is made by me but the games were not made by me. Game credits are below:
 * https://github.com/ntcnet83/html5-doodle-jump
-* https://github.com/ebaek/tweetybird
 * https://github.com/zhouchangxun/superMario
 * https://codepen.io/camsong/pen/wcKrg
 * https://codepen.io/v120/pen/eGdOLq <-- Sourced from Chromium Authors
+* https://html5-games.io/ <-- Where all proxied games come from

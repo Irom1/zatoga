@@ -99,13 +99,15 @@ img.center {
 }
 .basic {
   color: green;
-  transition: 0.5s opacity;
 }
 .beta {
   color: red;
 }
 .premium {
   color: deepskyblue;
+}
+.offline {
+  color: yellow;
 }
 .login {
   display: none;
