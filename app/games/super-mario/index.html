@@ -18,6 +18,15 @@
     <a href="/app/games/super-mario/power.html">Powerups</a><br>
     <!--<a href="/app/games/super-mario/">Scoreboard</a><br>-->
     <a href="/app/" class="home">Go back home</a><br>
+    <script>
+      var inApp = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+      if(inApp) {
+        window.resizeTo(422, 584);
+        window.addEventListener('resize', () => {
+          window.resizeTo(422, 584);
+        });
+      }
+    </script>
     <script src="/media/app.js"></script>
   </body>
 </html>
