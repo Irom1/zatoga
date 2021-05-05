@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/media/style.css" />
+    <title>Zatoga - Logout</title>
+    <meta name="apple-mobile-web-app-status-bar" content="#000000" />
+    <meta name="theme-color" content="#000000" />
+  </head>
+  <body>
+    <br><br><br><br><br><br>
+    <img class="center" src="/media/loading.gif"/>
+    <h2 class="center">Logging you out...</h2>
+    <iframe style="display:none;" src="https://www.irom.ga/logout" onload="frameLoaded()"></iframe>
+    <script>
+      var inApp = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+      if(inApp) {
+        window.resizeTo(422, 584);
+        window.addEventListener('resize', () => {
+          window.resizeTo(422, 584);
+        });
+      }
+      localStorage.pin = "";
+      function frameLoaded() {
+        setTimeout(function(){
+          location.href='/app/';
+        },800);
+      }
+    </script>
+    <script src="/media/app.js"></script>
+  </body>
+</html>

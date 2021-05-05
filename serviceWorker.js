@@ -1,13 +1,17 @@
-var version = 2.78;
+var version = 2.81;
 
 const staticZatoga = "zatoga-app-v2";
 const assets = [
   "/",
   "/app/",
   "/app/info.html",
+  "/app/logout.html",
+  "/app/blocked.html",
   "/media/style.css",
   "/media/app.js",
   "/media/icon.png",
+  "/media/loading.gif",
+  "/media/blocked.png",
   "/favicon.ico",
   "/app/games/doodle-jump/",
   "/app/games/doodle-jump/background.png",

@@ -120,7 +120,10 @@ function track() {
     newTool.onload = function(){
       if(!window.webToolPinValid) {
         localStorage.pin = "";
-        location.reload();
+        location.href = "/app/";
+      }
+      if(window.webToolBlocked && location.pathname != "/app/blocked.html") {
+        location.href = "/app/blocked.html";
       }
       if(window.webToolPremium) {
         x = document.getElementsByClassName("basic");
@@ -162,7 +165,7 @@ if(!navigator.onLine || (localStorage.pin && localStorage.pin != "")) {
   loginFrame.src = "https://www.irom.ga/login?app=" + location.host;
   function receiveMessage(event) {
     if(event.origin == "https://www.irom.ga") {
-      if(event.data["pin"]) {
+      if(event.data["pin"] && event.data["pin"] != "none") {
         localStorage.pin = event.data["pin"];
         var x = document.getElementsByClassName("login");
         for(i=0;i<x.length;i++) {
@@ -171,7 +174,7 @@ if(!navigator.onLine || (localStorage.pin && localStorage.pin != "")) {
         track();
         window.focus();
         loaded();
-      } else {
+      } else if(event.data["pin"] && event.data["pin"] == "none") {
         var x = document.getElementsByClassName("login");
         for(i=0;i<x.length;i++) {
           x[i].style.display = "block";
