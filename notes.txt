@@ -1,3 +1,5 @@
 Website for making maskable icons: https://maskable.app/editor
 
 for some reason you need to put <script> tags for the main script @ the end
+
+fonts.googleapis.com for fonts
