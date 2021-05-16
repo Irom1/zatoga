@@ -18,16 +18,17 @@
 </style>
 </head>
 <body>
-<iframe></iframe>
+<iframe id="gameFrame"></iframe>
 <span class="back top" onclick="window.location.href='/app/games/online';"></span>
 <script>
 // Force app size
 var inApp = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
 if(inApp) {
   window.resizeTo(1080, 750);
-  window.addEventListener('resize', () => {
+  // Allow custom resizing afterward
+  /*window.addEventListener('resize', () => {
     window.resizeTo(1080, 750);
-  });
+  });*/
 }
 let params = (new URL(document.location)).searchParams;
 let game = params.get("game");
@@ -36,7 +37,7 @@ document.getElementsByTagName("iframe")[0].src = "https://proxy.irom.ga/~html5-g
 (async function() {
   let x = await fetch("https://html5-games.io/site-checker?site=html5-games.io");
   if(x) {
-    document.getElementsByTagName("iframe")[0].src = "https://html5-games.io/game/" + game + "/";
+    document.getElementById("gameFrame").src = "https://html5-games.io/game/" + game + "/";
   }
 })();
 </script>
