@@ -1,6 +1,6 @@
 <head>
   <link rel="stylesheet" href="/media/style.css"/>
-  <meta name="apple-mobile-web-app-status-bar" content="seagreen"/>
+  <meta name="apple-mobile-web-app-status-bar" content="seagreen" />
   <meta name="theme-color" content="seagreen" />
   <script async src="https://arc.io/widget.min.js#4Jpe4Zp2"></script>
 <style>
@@ -38,8 +38,9 @@ let apps = {
   "telegram":function(){
     setFrame("https://evgeny-nadymov.github.io/telegram-react/");
   },
-  "minecraft":function(){
-    setFrame("https://archive.retrospicer.repl.co/minecraftjs.html/");
+  "discord":function(){
+    alert("Please note that you have to log into discord via QR Code. The normal login (email + password) will not work for some reason and may lock your discord account.")
+    setFrame("https://websurfpro.tamoghnak13.repl.co/fetch/aHR0cHM6Ly9kaXNjb3JkLmNvbQ==/login");
   }
 }
 apps[app]();
