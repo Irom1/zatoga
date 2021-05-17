@@ -12,15 +12,18 @@
   <body>
     <h1 class="center"><span class="basic">Premium</span><span style="display:inline;"><span class="premium hide">Premium</span></span> Collection</span></h1>
     <p>
-      Below you can access Premium services in Zatoga - but <span style="text-decoration:underline;">only</span>  if you are a premium member.<br><br>
+      Below you can access Premium services in Zatoga - but you won't be able to click on it <span style="text-decoration:underline;">unless</span> you are a premium member - then you can click on the button and access the content.<br><br><b>
       To become a Premium Member you must refer <span style="text-decoration:underline;">at least</span>  two users to Zatoga and then contact us (in person) or at <span href"mailto:support@irom.ga" style="text-decoration:underline;">support@irom.ga</span> .
-    </p>
+    </b></p>
+
+    <a class="disabled premium" style="color:white!important" onclick="if(!this.classList.contains('disabled'))location.href='view.html?app=minecraft'">Minecraft-JS</a><br>
     <a class="disabled premium" style="color:white!important" onclick="if(!this.classList.contains('disabled'))location.href='view.html?app=telegram'">Telegram Unblocked</a><br>    <a class="disabled premium" style="color:white!important" onclick="if(!this.classList.contains('disabled'))location.href='view.html?app=discord'">Discord Unblocked</a><br>
     <a class="disabled premium" style="color:white!important" onclick="if(!this.classList.contains('disabled'))location.href='view.html?app=instagram'">Instagram Unblocked</a><br>
     <a class="disabled premium" style="color:white!important" onclick="if(!this.classList.contains('disabled'))location.href='view.html?app=tiktok'">TikTok Unblocked</a><br>
-    <a class="disabled premium" style="color:white!important" onclick="if(!this.classList.contains('disabled'))location.href='view.html?app=minecraft'">Minecraft-JS</a><br>
+  <a class="disabled premium" style="color:white!important" onclick="if(!this.classList.contains('disabled'))location.href='view.html?app=youtube'">Youtube Unblocked (BETA)</a><br>
+  <a class="disabled premium" style="color:white!important" onclick="if(!this.classList.contains('disabled'))location.href='view.html?app=reddit'">Reddit Unblocked (BETA)</a><br>
+  <a class="disabled premium" style="color:white!important" onclick="if(!this.classList.contains('disabled'))location.href='view.html?app=facebook'">Facebook Unblocked (BETA)</a><br>
 
-  <a class="disabled" style="color:white!important" onclick="if(!this.classList.contains('disabled'))location.href='view.html?app=krunker'">Krunker (coming soon)</a><br>
     <a href="/app/" class="home">Go back home</a>
     <script>
       var inApp = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
