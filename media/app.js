@@ -4,6 +4,7 @@ var onApp = (location.pathname == "/app/");
 var beta = (location.host == "zatoga.irom1.repl.co");
 let stable = !beta;
 
+
 // this event will only fire if the user does not have the pwa installed
 window.addEventListener('beforeinstallprompt', (event) => {
   event.preventDefault();
