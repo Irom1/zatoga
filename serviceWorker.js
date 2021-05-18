@@ -1,6 +1,6 @@
 importScripts('https://arc.io/arc-sw-core.js');
 
-var version = 3.80;
+var version = 3.81;
 
 const staticZatoga = "zatoga-app-v3";
 const assets = [
