@@ -8,28 +8,28 @@
     <title>Account Blocked</title>
     <meta name="apple-mobile-web-app-status-bar" content="#FF0000" />
     <meta name="theme-color" content="#FF0000" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
     <style> 
       body {
         background-color: red !important;
         color: white;
       }
-
-      .dark {color: black;}
-      button, span {margin: 4px 2px;}
+      p > span {
+        text-decoration: underline;
+      }
+      p {
+        color: #ddd;
+      }
     </style>
   </head>
   <body>
-
-    <br><br><br>
+    <br><br>
     <img class="center" src="/media/blocked.png"/>
-     <center>
     <h2 class="center">Your account has been blocked.</h2>
-    <h3 class="center">This is likley due to *Inappropriate use</h3>
+    <h3 class="center">This is likley due to *inappropriate use</h3>
     <br>
-    <p>*Inappropriate use includes signing up with fake account information, <b class="dark">signing in with a school email</b>, misusing our services or reporting Zatoga.</p>
-    <p>If you would like to login with a valid account click <button><span onclick="location.href='/app/logout.html';" style="cursor:pointer;">here</span></button></p>
+    <p>*Inappropriate use includes signing up with fake account information (signing up with a <span>fake name, email, or school/work email</span>), misusing our services or reporting Zatoga.</p></p>
     <p>Please email us at support@irom.ga if you think this is a mistake.</p>
+    <a style="background-color:black;color:white;" href='/app/logout.html'>Login with a valid account</a>
     <script>
       var inApp = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
       if(inApp) {
@@ -40,6 +40,5 @@
       }
     </script>
     <script src="/media/app.js"></script>
- </center>
   </body>
 </html>

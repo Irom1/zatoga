@@ -18,7 +18,7 @@
 </style>
 </head>
 <body>
-<iframe></iframe>
+<iframe id="scriptFrame" src="/app/premium/loading.html"></iframe>
 <span class="back top" onclick="window.location.href='/app/premium/';"></span>
 <script>
 // Force app size
@@ -30,7 +30,7 @@ if(inApp) {
   });
 }
 function setFrame(url) {
-  document.getElementsByTagName("iframe")[0].src = url;
+  document.getElementById("scriptFrame").src = url;
 }
 let params = (new URL(document.location)).searchParams;
 let app = params.get("app");
@@ -47,20 +47,18 @@ let apps = {
   "tiktok":function(){
     setFrame("https://apwsrf.herokuapp.com/web/_aHR0cHM6Ly93d3cudGlrdG9rLmNvbQ==_/");
   },
-  "minecraft":function(){
-    setFrame("./mcjs.html");
-  },
   "reddit":function(){
     setFrame("https://alloywebpro.herokuapp.com/web/_aHR0cHM6Ly93d3cucmVkZGl0LmNvbQ==_/");
   },
-  "facebook":function(){
-    setFrame("https://apwsrf.herokuapp.com/web/_aHR0cHM6Ly93d3cuZmFjZWJvb2suY29t_/");
-  },
-  "youtube":function(){
-    setFrame("https://alloywebpro.herokuapp.com/web/_aHR0cHM6Ly93d3cueW91dHViZS5jb20=_/");
+  "roblox":function(){
+    setFrame("https://theduy.herokuapp.com/web/_aHR0cHM6Ly93d3cucm9ibG94LmNvbQ==_/");
   }
 }
-apps[app]();
+if(apps[app]){
+  apps[app]();
+} else {
+  alert("Seems to be an error with this service. Maybe it doesn't exist.");
+}
 </script>
 <script src="/media/app.js"></script>
 </body>

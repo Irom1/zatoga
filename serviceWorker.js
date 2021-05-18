@@ -1,10 +1,11 @@
 importScripts('https://arc.io/arc-sw-core.js');
 
-var version = 3.77;
+var version = 3.80;
 
-const staticZatoga = "zatoga-app-v2";
+const staticZatoga = "zatoga-app-v3";
 const assets = [
   "/",
+  "/404.html",
   "/app/",
   "/app/info.html",
   "/app/logout.html",
@@ -16,7 +17,7 @@ const assets = [
   "/media/blocked.png",
   "/favicon.ico",
   "/app/premium/",
-  "/app/premium/index.html",
+  "/app/premium/loading.html",
   "/app/premium/view.html",
   "/app/games/offline/",
   "/app/games/offline/mcjs.html",
