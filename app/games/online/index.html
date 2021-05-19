@@ -12,9 +12,7 @@
   </head>
   <body>
     <h1 class="center">Online Games</h1>
-    <p>These games don't work offline but will always be availible in the app. If any games ask you to login - don't try to - it won't work.<!--<br><br>For some reason they only work on certain devices and take some time to load. You know your device isn't compatible if you get a "game locked" message upon opening.</p>
-    <p>You can also view a few more games/services in the premium collection:--></p>
-    <!--<a href="/app/premium/" style="background-color:deepskyblue;">➡️️ Premium Collection ⬅️</a><br>-->
+    <p>These games don't work offline but will always be availible in the app. If any games ask you to login - don't try to - it won't work.
     <span class="basic">
       <p>Premium users also get access to two of the latest games before they released to everyone.</p>
     </span>
@@ -24,8 +22,9 @@
     </span>
     <span id="completeCollection"></span>
     <a href="/app/" class="home">Go back home</a>
+    <script src="/media/app.js"></script>
     <script>
-      resize(422, 584);
+      resize(440, 570);
       async function loadGames() {
         // Main load
         let games = await fetch("/app/games/online/games.json");
@@ -43,15 +42,5 @@
       }
       loadGames();
     </script>
-        <script>
-      // Force app size
-var inApp = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
-if(inApp) {
-  window.resizeTo(440, 590);
-  window.addEventListener('resize', () => {
-    window.resizeTo(440, 590);
-  });
-}
-</script>
   </body>
 </html>
