@@ -35,12 +35,27 @@ window.addEventListener('appinstalled', () => {
   location.href = "/app/";
 });
 
-// Force app size
-if(inApp && onApp) {
-  window.resizeTo(440, 590);
-  window.addEventListener('resize', () => {
-    window.resizeTo(440, 590);
-  });
+// Force app size - function
+function resize(width,height,always) {
+  var insideApp = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+  if(insideApp) {
+    window.resizeTo(width, height);
+    setTimeout(function(){
+      window.resizeTo(2 * width - window.innerWidth, height + height - window.innerHeight);
+    },200);
+  }
+  if(always) {
+    window.addEventListener('resize', () => {
+      window.resizeTo(width, height);
+      setTimeout(function(){
+        window.resizeTo(2 * width - window.innerWidth, height + height - window.innerHeight);
+      },200);
+    });
+  }
+}
+// Force app size on homepage
+if(onApp) {
+  resize(440, 570);
 }
 
 // Online only content

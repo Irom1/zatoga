@@ -20,22 +20,9 @@
 <body>
 <iframe id="gameFrame"></iframe>
 <span class="back top" onclick="window.location.href='/app/games/online';"></span>
+
+<script src="/media/app.js"></script>
 <script>
-// Force app size - function to be added to app.js eventually
-function resize(width,height,always) {
-  var inApp = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
-  if(inApp) {
-    window.resizeTo(width, height);
-    setTimeout(function(){
-      window.resizeTo(2 * width - window.innerWidth, height + height - window.innerHeight);
-    },200);
-  }
-  if(always) {
-    window.addEventListener('resize', () => {
-      window.resizeTo(width, height);
-    });
-  }
-}
 let params = (new URL(document.location)).searchParams;
 let game = params.get("game");
 game = game.toLowerCase().replace(/ /g, "-");
@@ -63,5 +50,4 @@ if(externalGames[game] && externalGames[game]["url"]) {
   })();
 }
 </script>
-<script src="/media/app.js"></script>
 </body>
