@@ -25,13 +25,7 @@
     <span id="completeCollection"></span>
     <a href="/app/" class="home">Go back home</a>
     <script>
-      var inApp = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
-      if(inApp) {
-        window.resizeTo(422, 584);
-        window.addEventListener('resize', () => {
-          window.resizeTo(422, 584);
-        });
-      }
+      resize(422, 584);
       async function loadGames() {
         // Main load
         let games = await fetch("/app/games/online/games.json");
@@ -59,6 +53,5 @@ if(inApp) {
   });
 }
 </script>
-    <script src="/media/app.js"></script>
   </body>
 </html>
