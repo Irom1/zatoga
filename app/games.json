@@ -121,5 +121,14 @@
     "service": "offline",
     "premium": false,
     "mobile":false
+  },
+  "Death Run 3D": {
+    "name": "Death Run 3D",
+    "service": "y8",
+    "premium": false,
+    "url":"https://theduy.herokuapp.com/web/_aHR0cHM6Ly9zdG9yYWdlLnk4LmNvbQ==_/y8-studio/unity/joll/death_run_builds/death_run_wasm_v1/index.html",
+    "width":900,
+    "height":640,
+    "mobile":false
   }
 }
