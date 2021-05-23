@@ -40,7 +40,7 @@ function resize(width,height,always) {
   var insideApp = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
   if(insideApp) {
     window.resizing = true;
-    window.resizeTo(width + window.outerWidth - window.innerWidth, height + window.outerHeight - window.outerHeight);
+    window.resizeTo(width + window.outerWidth - window.innerWidth, height + window.outerHeight - window.innerHeight);
     window.resizing = false;
   }
   if(always) {
@@ -48,7 +48,7 @@ function resize(width,height,always) {
       if(!window.resizing) {
         window.resizing = true;
         //setTimeout(function(){
-          window.resizeTo(width + window.outerWidth - window.innerWidth, height + window.outerHeight - window.outerHeight);
+          window.resizeTo(width + window.outerWidth - window.innerWidth, height + window.outerHeight - window.innerHeight);
         //},100);
         setTimeout(function(){
           window.resizing = false;
@@ -59,7 +59,7 @@ function resize(width,height,always) {
 }
 // Force app size on homepage
 if(onApp) {
-  resize(440, 590, true);
+  resize(422,592,true);
 }
 
 // Online only content

@@ -1,6 +1,6 @@
 importScripts('https://arc.io/arc-sw-core.js');
 
-var version = 3.910;
+var version = 4.06;
 
 const staticZatoga = "zatoga-app-v2";
 const assets = [
@@ -17,10 +17,9 @@ const assets = [
   "/media/blocked.png",
   "/favicon.ico",
   "/app/premium/",
-  "/app/premium/loading.html",
   "/app/premium/view.html",
   "/app/games/offline/",
-  "/app/games/offline/mcjs.html",
+  "/app/games/offline/minecraft-js/",
   "/app/games/offline/doodle-jump/",
   "/app/games/offline/doodle-jump/background.png",
   "/app/games/offline/doodle-jump/border.png",
@@ -28,8 +27,8 @@ const assets = [
   "/app/games/offline/doodle-jump/main.js",
   "/app/games/offline/doodle-jump/prefixfree.min.js",
   "/app/games/offline/doodle-jump/style.css",
-  "/app/games/offline/2048.html",
-  "/app/games/offline/chrome-dino.html",
+  "/app/games/offline/2048-game/",
+  "/app/games/offline/chrome-dino/",
   "/app/games/offline/super-mario/",
   "/app/games/offline/super-mario/game.png",
   "/app/games/offline/super-mario/game.html",
@@ -71,8 +70,7 @@ const assets = [
   "/app/games/offline/super-mario/Scripts/sounds_noop.js",
   "/app/games/offline/super-mario/Scripts/sounds.js",
   "/app/games/offline/super-mario/Scripts/testlevels.js",
-  "/app/games/online/",
-  "/app/games/online/play.html"
+  "/app/games/online.html"
 ];
 
 self.addEventListener("install", installEvent => {

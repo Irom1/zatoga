@@ -5,6 +5,7 @@
 <title>Super Mario</title>
 <link href="Content/style.css" rel="stylesheet"/>
 <link rel="stylesheet" href="/media/style.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
   span.back:hover::after {
     content: "Go back to Menu" !important;
@@ -16,12 +17,6 @@
 </head>
 <body>
 <span class="back" onclick="window.location.href='/app/games/offline/super-mario/';"></span>
-<script>
-  window.resizeTo(640, 510);
-  window.addEventListener('resize', () => {
-    window.resizeTo(640, 510);
-  });
-</script>
 <div id="game">
 <div id="world">
 </div>
@@ -38,10 +33,12 @@
 <script src="Scripts/sounds.js"></script>
 <script src="Scripts/main.js"></script>
 <script src="/media/app.js"></script>
+<script>
+  resize(640, 490, true);
+</script>
 <!-- Game Musik -->
 <audio id="GameMusic" preload="auto" autoplay loop>
     <source src="audio/Overworld.ogg" type="audio/ogg" />
 </audio>
-
 </body>
 </html>

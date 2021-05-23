@@ -3,6 +3,7 @@
   <meta name="apple-mobile-web-app-status-bar" content="seagreen" />
   <meta name="theme-color" content="seagreen" />
   <script async src="https://arc.io/widget.min.js#4Jpe4Zp2"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
   iframe {
     position: fixed;
@@ -18,27 +19,19 @@
 </style>
 </head>
 <body>
-<iframe id="gameFrame"></iframe>
-<span class="back top" onclick="window.location.href='/app/games/online';"></span>
+<iframe id="gameFrame" allowfullscreen></iframe>
+<span class="back top" onclick="window.location.href='/app/';"></span>
 <script src="/media/app.js"></script>
 <script>
 let params = (new URL(document.location)).searchParams;
 let game = params.get("game");
-game = game.toLowerCase().replace(/ /g, "-");
-let externalGames = {
-  "slope":{
-    "url":"https://theduy.herokuapp.com/web/_aHR0cHM6Ly9zdG9yYWdlLnk4LmNvbQ==_/y8-studio/unity/joll/slope/",
-    "width":900,
-    "height":640
-  }
-}
-if(externalGames[game] && externalGames[game]["width"] && externalGames[game]["height"]) {
-  resize(externalGames[game]["width"], externalGames[game]["height"]);
+if(params.get("width") && params.get("height")) {
+  resize(parseFloat(params.get("width")), parseFloat(params.get("height")), false);
 } else {
-  resize(1080, 750);
+  resize(1080, 750, false);
 }
-if(externalGames[game] && externalGames[game]["url"]) {
-  document.getElementById("gameFrame").src = externalGames[game]["url"];
+if(params.get("url")) {
+  document.getElementById("gameFrame").src = params.get("url");
 } else {
   document.getElementById("gameFrame").src = "https://proxy.irom1.repl.co/~html5-games.io/game/" + game + "/";
   (async function() {

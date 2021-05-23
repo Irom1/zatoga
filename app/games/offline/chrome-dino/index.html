@@ -84,7 +84,7 @@ body {
 
 
 <body id="t" i18n-values=".style.fontFamily:fontfamily;.style.fontSize:fontsize" jstcache="0" class="offline" style="font-family: &quot;Segoe UI&quot;, Tahoma, sans-serif; font-size: 75%;">
-  <span class="back top" onclick="window.location.href='/app/games/offline/';"></span>
+  <span class="back top" onclick="window.location.href='/app/';"></span>
   <div class="interstitial-wrapper" style="font-size: 30px;text-align: center;font-family: Helvetica;" jstcache="0">Chrome Dino</div>
 <div class="onlyforchrome" style="margin-top:5px;text-align:center;color:#ffffffff;margin-bottom:80px; font-size:.8em;line-height:1.2em;font-family: Georgia;" jstcache="0"><strong style="color:black">Press space to start!</strong><!--<a href="chrome://dino/" target="_blank" jstcache="0">
  <strong jstcache="0">chrome://dino/</strong></a>-->
@@ -120,15 +120,11 @@ body {
 	</div>
   
   
+<script src="/media/app.js"></script>
       <script id="rendered-js" >
 // Force app size
-var inApp = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
-if(inApp) {
-  window.resizeTo(600, 500);
-  window.addEventListener('resize', () => {
-    window.resizeTo(600, 500);
-  });
-}
+resize(600, 500, true);
+
 // Copyright (c) 2014 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
@@ -2589,7 +2585,6 @@ document.addEventListener('DOMContentLoaded', onDocumentLoad);
     </script>
 
   
-<script src="/media/app.js"></script>
 </body>
 
 </html>

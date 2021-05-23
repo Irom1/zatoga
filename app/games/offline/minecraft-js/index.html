@@ -4277,8 +4277,8 @@ function MineKhan() {
 
 		// Main menu buttons
 		Button.add(width / 2, height / 2 - 20, 400, 40, "Singleplayer", "main menu", r => changeScene("loadsave menu"))
-		Button.add(width / 2, height / 2 + 35, 400, 40, "Multiplayer", "main menu", nothing, always, "Multiplayer isn't possible at this time.")
-		Button.add(width / 2, height / 2 + 90, 400, 40, "Options", "main menu", r => changeScene("options"))
+		//Button.add(width / 2, height / 2 + 35, 400, 40, "Multiplayer", "main menu", nothing, always, "Multiplayer isn't possible at this time.")
+		Button.add(width / 2, height / 2 + 35, 400, 40, "Options", "main menu", r => changeScene("options"))
 
 		// Creation menu buttons
 		Button.add(width / 2, 135, 300, 40, ["World Type: Normal", "World Type: Superflat"], "creation menu", r => superflat = r === "World Type: Superflat")
@@ -5496,7 +5496,8 @@ init()
 
 	</script>
 
-<span class="back top" onclick="window.location.href='/app/games/offline/';"></span>
-<script src="/media/index.js"></script>
+<span class="back top" onclick="window.location.href='/app/';"></span>
+<script>window.goYAY = function(){resize(800,600);}</script>
+<script src="/media/app.js" onload="window.goYAY();"></script>
 	</body>
 </html>

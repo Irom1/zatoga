@@ -6,56 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="/media/style.css" />
     <title>Zatoga</title>
-    <link rel="manifest" href="manifest.json" />
-    <!-- ios support -->
-    <link rel="apple-touch-icon" href="/media/icon.png" />
     <meta name="apple-mobile-web-app-status-bar" content="#000000" />
     <meta name="theme-color" content="#000000" />
     <script async src="https://arc.io/widget.min.js#4Jpe4Zp2"></script>
   </head>
-  <body>
-    <img class="rotate small" src="/media/icon.png"/>
-    <h1 class="small">Zatoga <span class="stable basic online">v3.9 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="stable premium hide">Premium</span><span class="stable offline hide">Offline </span><span class="beta hide">BETA&nbsp;&nbsp;&nbsp;&nbsp;</span></h1>&nbsp;&nbsp; <a class="button i" style="background-color:red;color:black;" href='/app/logout.html'>Logout</a>&nbsp;<br><br>
-    <h3 class="small" id="message"></h3><br><br>
-    <a href="/app/games/offline/">Offline Games</a><br>
-    <a class="online disabled" href="/app/games/online/">Online Games</a><br>
-    <h3 class="small">Visit the <span style="text-decoration:underline;">Premium</span> Services Collection.</h3><br><br>
-    <a class="online disabled" href="/app/premium/" style="background-color:deepskyblue;">➡️️ Premium Collection ⬅️</a><br>
-
-    
-
-    <style>
-    .button, .i {
-width: 40px;
-margin: 1px auto;
-display: inline;
-align: center;
-font-size: 15px;
-
-}
-</style>
-<center>
-  <style>
-button {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 12px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 8px;
-}
-
-</style>
-    <br>
-    <h4 class="small" id="message">More Options</h4><br><br>
-    <button class="dm" onclick="location.href='/app/info.html';">Info</button> <button class="dm" onClick="window.location.href='/app/updateinfo.html';">Update Zatoga</button> 
-    <button class="dm" onclick="location.href='/app/howtopremium.html';">Get Premium for Free!</button>
-    <!--<button class="dm beta" onclick="location.href='/app/list.html';">GameList BETA</button> -->   </center>
+  <body style="overflow:hidden;">
+    <!-- Stuff for login & loading -->
     <span class="login">
       <img class="rotate small" src="/media/icon.png"/>
       <h1 class="small">Zatoga <span class="stable basic online">v3.9</span><span class="stable premium hide">Premium</span><span class="stable offline hide">Offline</span><span class="beta hide">BETA</span></h1><br>
@@ -63,12 +19,98 @@ button {
       <a onclick="window.open('https://www.irom.ga/login?app=' + location.host)">Log in/Sign up</a>
     </span>
     <span class="loading">
-      <h1 class="center">Zatoga <span class="stable basic online">v3.9</span><span class="stable premium hide">Premium</span><span class="stable offline hide">Offline</span><span class="beta hide">BETA</span></h1><br><br><br>
+      <h1 class="center">Zatoga <span class="stable basic online">v4.0</span><span class="stable premium hide">Premium</span><span class="stable offline hide">Offline</span><span class="beta hide">BETA</span></h1><br><br><br>
       <img class="rotate fast center" src="/media/icon.png"/>
-      <!--<img class="center" src="/media/loading.gif"/><br><br>-->
       <br><br><br><br><br><br>
       <h2 class="center">Loading...</h3>
     </span>
-    <script src="/media/app.js"></script>
+    <!-- Zatoga header -->
+    <img class="rotate small" src="/media/icon.png"/>
+    <h1 class="small">Zatoga <span class="stable basic online">v4.0</span><span class="stable premium hide">Premium</span><span class="stable offline hide">Offline </span><span class="beta hide">BETA</span></h1>
+    <!-- Center buttons -->
+    <center style="background-color: #333;width:100%;display:block;border-radius:10px;margin-top:5px;">
+      <a class="mini gray" href='/app/info.html'>Info</a>
+      <a class="mini gray" href='/app/premium'>Premium</a>
+    <a class="mini gray share"><svg><use href="#share-icon"></use></svg>Share</a>
+        <svg style="display:none;">
+      <defs>
+        <symbol id="share-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path><polyline points="16 6 12 2 8 6"></polyline><line x1="12" y1="2" x2="12" y2="15"></line></symbol>
+      </defs>
+    </svg>
+      <a class="mini gray" href='/app/logout.html'>Logout</a>
+    </center><br>
+    <!-- Message & text -->
+    <h3 class="small" id="message"></h3><br><br>
+    <input placeholder="Search for a game..." type="text" style="width:100%;font-size:18pt;background-color:#000;color:white;outline:0;border:none;position:sticky;top:0;z-index:1;padding:4px;box-sizing:inline-box;" autofocus id="searchBox"/><br><br>
+    <span id="completeCollection"></span>
+    <span id="Game-Not-Found" style="text-align:center;color:white;display:none;">No Games Found</span>
+<script src="/media/app.js"></script>
+   <script> 
+       async function loadGames(){
+        // Game Curation (from games.json)
+        let games = await fetch("/app/games.json");
+        games = await games.json();
+        gameArray = [];
+        for(var key in games) {
+          gameArray.push(key);
+        }
+        let gameElems = "";
+        let onMobile = /Mobi|Android/i.test(navigator.userAgent);
+        function addGame(game) {
+          // Clean up variables
+          if(!game["url"])game["url"]=""
+          if(!game["url"])game["width"]=""
+          if(!game["url"])game["height"]=""
+          let gameString = game["name"].toLowerCase().replace(/ /g, "-");
+          // Add html for link to variable
+          if(game["service"] == "offline") {
+            gameElems += "<span class='game'><a style='background-color:seagreen;color:white;' href='/app/games/offline/" + gameString + "/'>▶️️️ " + game["name"] + "</a><br></span>"; 
+          } else if(game["premium"]) {
+            latestGameCount++;
+            gameElems += "<span class='game' title='This game requires premium' style='display:block;'><a class='premium disabled' style='color:white;background-color:seagreen;' onclick='if(!this.classList.contains(`disabled`))location.href=`/app/games/online.html?game=" + gameString + "&url=" + game["url"] + "&width=" + game["width"] + "&height=" + game["height"] + "`'>▶️️️ " + game["name"] + "</a><br></span>";
+          } else {
+            gameElems += "<span class='game' title='This game requires internet' style='display:block;'><a class='internet disabled game' style='color:white;background-color:seagreen;' onclick='if(!this.classList.contains(`disabled`))location.href=`/app/games/online.html?game=" + gameString + "&url=" + game["url"] + "&width=" + game["width"] + "&height=" + game["height"] + "`'>▶️️️ " + game["name"] + "</a><br></span>";
+          }
+        }
+        latestGameCount = 0;
+        for(var count=gameArray.length-1;count>=0;count--) {
+          let game = games[gameArray[count]];
+          if(!onMobile || game["mobile"]) {
+            if(latestGameCount < 2) {
+              game["premium"] = true;
+            }
+            addGame(game);
+          }
+        }
+        document.getElementById("completeCollection").innerHTML = gameElems;
+        if(navigator.onLine) {
+          x = document.getElementsByClassName("internet");
+          for(var i=0;i<x.length;i++) {
+            x[i].classList.remove("disabled");
+          }
+        }
+      }
+      loadGames();
+      function sortGames() {
+        let search = document.getElementById("searchBox").value.toLowerCase();
+        let gameList = document.getElementsByClassName("game");
+        let results = false;
+        for(var i=0;i<gameList.length;i++) {
+          let text = gameList[i].innerText.toLowerCase();
+          if(text.includes(search)) {
+            gameList[i].style.display = "block";
+            results = true;
+          } else {
+            gameList[i].style.display = "none";
+          }
+        }
+        if(!results) {
+          document.getElementById("Game-Not-Found").style.display = "block";
+        } else {
+          document.getElementById("Game-Not-Found").style.display = "none";
+        }
+      }
+      document.getElementById("searchBox").onkeyup = sortGames;
+    </script>
   </body>
 </html>

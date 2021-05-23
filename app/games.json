@@ -1,32 +1,125 @@
 {
-  "Goat Game":{
-    "name":"Goat Game",
-    "service":"y8",
-    "premium":false
+  "Doodle Jump": {
+    "name": "Doodle Jump",
+    "service": "offline",
+    "premium": false
   },
-  "Goater Game":{
-    "name":"Goater Game",
-    "service":"y8",
-    "premium":false
+  "Circle Shooter": {
+    "name": "Circle Shooter",
+    "service": "html5-games",
+    "premium": false,
+    "mobile": true
   },
-  "Goat Game 2":{
-    "name":"Goat Game 2",
-    "service":"offline",
-    "premium":true
+  "Rider Online": {
+    "name": "Rider Online",
+    "service": "html5-games",
+    "premium": false
   },
-  "Goat Game 3":{
-    "name":"Goat Game 3",
-    "service":"offline",
-    "premium":false
+  "Ninja Master": {
+    "name": "Ninja Master",
+    "service": "html5-games",
+    "premium": false,
+    "mobile": true
   },
-  "Goat Game 4":{
-    "name":"Goat Game 4",
-    "service":"offline",
-    "premium":false
+  "Chrome Dino": {
+    "name": "Chrome Dino",
+    "service": "offline",
+    "premium": false,
+    "mobile": true
   },
-  "Goat Game 5":{
-    "name":"Goat Game 5",
-    "service":"offline",
-    "premium":false
+  "Catch Dots": {
+    "name": "Catch Dots",
+    "service": "html5-games",
+    "premium": false,
+    "mobile": true
+  },
+  "Bouncing Balls": {
+    "name": "Bouncing Balls",
+    "service": "html5-games",
+    "premium": false,
+    "mobile": true
+  },
+  "Swipe Basketball": {
+    "name": "Swipe Basketball",
+    "service": "html5-games",
+    "premium": false
+  },
+  "2048 Game": {
+    "name": "2048 Game",
+    "service": "offline",
+    "premium": false
+  },
+  "MotoX3M": {
+    "name": "MotoX3M",
+    "service": "html5-games",
+    "premium": false
+  },
+  "Yahtzee": {
+    "name": "Yahtzee",
+    "service": "html5-games",
+    "premium": false
+  },
+  "Moto X3M Winter": {
+    "name": "Moto X3M Winter",
+    "service": "html5-games",
+    "premium": true
+  },
+  "Tank Defender": {
+    "name": "Tank Defender",
+    "service": "html5-games",
+    "premium": false
+  },
+  "Candy Crush": {
+    "name": "Candy Crush",
+    "service": "html5-games",
+    "premium": false
+  },
+  "Master Chess": {
+    "name": "Master Chess",
+    "service": "html5-games",
+    "premium": false
+  },
+  "8 ball pool": {
+    "name": "8 ball pool",
+    "service": "html5-games",
+    "premium": false
+  },
+  "Perfect Dunk": {
+    "name": "Perfect Dunk",
+    "service": "html5-games",
+    "premium": false
+  },
+  "Minecraft-JS": {
+    "name": "Minecraft-JS",
+    "service": "offline",
+    "premium": false
+  },
+  "Air Hockey": {
+    "name": "Air Hockey",
+    "service": "html5-games",
+    "premium": false
+  },
+  "Ballistic": {
+    "name": "Ballistic",
+    "service": "html5-games",
+    "premium": false,
+    "mobile": true,
+    "width": 450,
+    "height": 730
+  },
+  "Slope": {
+    "name": "Slope",
+    "service": "y8",
+    "premium": false,
+    "url":"https://theduy.herokuapp.com/web/_aHR0cHM6Ly9zdG9yYWdlLnk4LmNvbQ==_/y8-studio/unity/joll/slope/",
+    "width":900,
+    "height":640,
+    "mobile":false
+  },
+  "Super Mario": {
+    "name": "Super Mario",
+    "service": "offline",
+    "premium": false,
+    "mobile":false
   }
 }

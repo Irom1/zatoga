@@ -19,17 +19,13 @@
 </style>
 </head>
 <body>
-<iframe sandbox="allow-same-origin allow-scripts allow-popups allow-forms" id="scriptFrame" src="/app/premium/loading.html"></iframe>
+<iframe sandbox="allow-same-origin allow-scripts allow-popups allow-forms" id="scriptFrame"></iframe>
 <span class="back top" onclick="window.location.href='/app/premium/';"></span>
+<script src="/media/app.js"></script>
 <script>
 // Force app size
-var inApp = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
-if(inApp) {
-  window.resizeTo(1080, 750);
-  window.addEventListener('resize', () => {
-    window.resizeTo(1080, 750);
-  });
-}
+resize(1080, 750);
+// other stuff
 function setFrame(url) {
   document.getElementById("scriptFrame").src = url;
 }
@@ -41,6 +37,7 @@ let apps = {
   },
   "discord":function(){
     setFrame("https://alloypro-xy.herokuapp.com/web/_aHR0cHM6Ly9kaXNjb3JkLmNvbQ==_/login");
+    alert("Please login with a QR code - otherwise the login won't work.");
   },
   "instagram":function(){
     setFrame("https://apwsrf.herokuapp.com/web/_aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbQ==_/");
@@ -61,5 +58,4 @@ if(apps[app]){
   alert("Seems to be an error with this service. Maybe it doesn't exist.");
 }
 </script>
-<script src="/media/app.js"></script>
 </body>

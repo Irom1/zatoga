@@ -21,5 +21,5 @@ The Progressive Web App is made by me but the games were not made by me. Game cr
 * https://github.com/zhouchangxun/superMario
 * https://codepen.io/camsong/pen/wcKrg
 * https://codepen.io/v120/pen/eGdOLq <-- Sourced from Chromium Authors
-* https://html5-games.io/ <-- Where all proxied games come from
+* https://html5-games.io/ &  <-- Where all proxied games come from
 *Games from https://holyubofficial.com*

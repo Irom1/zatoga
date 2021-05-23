@@ -762,7 +762,7 @@ hr {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body translate="no">
-  <span class="back top" onclick="window.location.href='/app/games/offline/';"></span>
+  <span class="back top" onclick="window.location.href='/app/';"></span>
 <div class="container">
 <div class="heading">
 <h1 class="title">2048</h1>
@@ -810,15 +810,10 @@ hr {
 </p>
 </div>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/hammer.js/1.0.6/hammer.min.js'></script>
+<script src="/media/app.js"></script>
 <script id="rendered-js">
 // Force app size
-var inApp = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
-if(inApp) {
-  window.resizeTo(600, 900);
-  window.addEventListener('resize', () => {
-    window.resizeTo(600, 900);
-  });
-}
+resize(600, 900, true);
 
 document.addEventListener("DOMContentLoaded", function () {
   // Wait till the browser is ready to render the game (avoids glitches)
@@ -1360,6 +1355,5 @@ Tile.prototype.updatePosition = function (position) {
   this.y = position.y;
 };
 </script>
-<script src="/media/app.js"></script>
 </body>
 </html>
