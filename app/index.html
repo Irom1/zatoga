@@ -14,7 +14,7 @@
     <!-- Stuff for login & loading -->
     <span class="login">
       <img class="rotate small" src="/media/icon.png"/>
-      <h1 class="small">Zatoga <span class="stable basic online">v3.9</span><span class="stable premium hide">Premium</span><span class="stable offline hide">Offline</span><span class="beta hide">BETA</span></h1><br>
+      <h1 class="small">Zatoga <span class="stable basic online">v4.0</span><span class="stable premium hide">Premium</span><span class="stable offline hide">Offline</span><span class="beta hide">BETA</span></h1><br>
       <h3 class="small">Please log in to continue to Zatoga.</h3><br><br>
       <a onclick="window.open('https://www.irom.ga/login?app=' + location.host)">Log in/Sign up</a>
     </span>
@@ -30,9 +30,8 @@
     <!-- Center buttons -->
     <center style="background-color: #333;width:100%;display:block;border-radius:10px;margin-top:5px;">
       <a class="mini gray" href='/app/info.html'>Info</a>
-      <a class="mini gray" href='/app/premium'>Premium</a>
-    <a class="mini gray share"><svg><use href="#share-icon"></use></svg>Share</a>
-        <svg style="display:none;">
+      <a class="mini gray" href='/app/premium'>Premium Apps</a>
+    <a class="mini gray share"><svg><use href="#share-icon"></use></svg>Share</a> <svg style="display:none;">
       <defs>
         <symbol id="share-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path><polyline points="16 6 12 2 8 6"></polyline><line x1="12" y1="2" x2="12" y2="15"></line></symbol>
       </defs>
@@ -42,8 +41,9 @@
     <!-- Message & text -->
     <h3 class="small" id="message"></h3><br><br>
     <input placeholder="Search for a game..." type="text" style="width:100%;font-size:18pt;background-color:#000;color:white;outline:0;border:none;position:sticky;top:0;z-index:1;padding:4px;box-sizing:inline-box;" autofocus id="searchBox"/><br><br>
+    <span class="beta basic hide" style"background-color:#000;color:white;" href='/app/premium'>Get access to all the games by getting Premium</span>
     <span id="completeCollection"></span>
-    <span id="Game-Not-Found" style="text-align:center;color:white;display:none;">No Games Found</span>
+    <span id="Game-Not-Found" style="text-align:center;color:white;display:none;"><b>No Games Found.</b><br><p>Please search again...</p></span>
 <script src="/media/app.js"></script>
    <script> 
        async function loadGames(){
@@ -111,6 +111,9 @@
         }
       }
       document.getElementById("searchBox").onkeyup = sortGames;
+    </script>
+    <script>
+      resize(422, 539);
     </script>
   </body>
 </html>

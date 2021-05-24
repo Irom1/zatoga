@@ -59,7 +59,7 @@ function resize(width,height,always) {
 }
 // Force app size on homepage
 if(onApp) {
-  resize(422,592,true);
+  resize(422,539,true);
 }
 
 // Online only content
@@ -106,10 +106,11 @@ if(beta) {
 // Message stuff
 if(onApp) {
   var messages = [
-    "There is plenty of time to get stuff done later - why don't you play some games now?",
+    "Why don't you play some games now?",
     "Ready to get distracted...?",
     "You know it's time to play fun games...",
-    "Why do work when you can play?"
+    "Why do work when you can play?",
+    "Check out our new v4 UI!"
   ];
   var message = document.getElementById("message");
   message.innerText = messages[Math.floor(Math.random() * messages.length)];
