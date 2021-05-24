@@ -136,13 +136,7 @@
     "service": "html5-games",
     "premium": true,
     "mobile": false
-  },/*
-  "Fireboy and Watergirl 3: The Ice Temple": {
-    "name": "Fireboy and Watergirl 3 The Ice Temple",
-    "service": "html5-games",
-    "premium": false,
-    "mobile": false
-  },*/
+  },
   "Jetpack Joyride": {
     "name": "Jetpack Joyride",
     "service": "html5-games",
