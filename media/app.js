@@ -109,8 +109,7 @@ if(onApp) {
     "Why don't you play some games now?",
     "Ready to get distracted...?",
     "You know it's time to play fun games...",
-    "Why do work when you can play?",
-    "Check out our new v4 UI!"
+    "Why do work when you can play?"
   ];
   var message = document.getElementById("message");
   message.innerText = messages[Math.floor(Math.random() * messages.length)];
