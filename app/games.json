@@ -84,6 +84,21 @@
     "service": "html5-games",
     "premium": false
   },
+    "Super Bowmasters": {
+    "name": "Super Bowmasters",
+    "service": "html5-games",
+    "premium": false,
+    "mobile": false
+  },
+    "Surviv-io": {
+    "name": "Surviv-io",
+    "service": "custom",
+    "premium": false,
+    "url":"https://ztgpro.herokuapp.com/web/_aHR0cHM6Ly9zdXJ2aXYuaW8=_/",
+    "width":900,
+    "height":900,
+    "mobile":false
+    },
   "Perfect Dunk": {
     "name": "Perfect Dunk",
     "service": "html5-games",
