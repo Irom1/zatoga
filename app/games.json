@@ -243,14 +243,5 @@
     "service": "html5-games",
     "premium": true,
     "mobile": false
-  },
-    "Cookie Clicker": {
-    "name": "Cookie Clicker",
-    "service": "custom",
-    "url": "http://zatogo.herokuapp.com/web/_aHR0cHM6Ly9jb29raWUtY2xpY2tlcjIuY29t_/cookie-clicker-2.embed",
-    "width": 900,
-    "height": 900,
-    "mobile": false,
-    "premium": false
   }
 }
