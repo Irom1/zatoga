@@ -4,6 +4,12 @@
     "service": "offline",
     "premium": false
   },
+    "Stickman-Fighter: Epic Battle": {
+    "name": "Stickman-Fighter: Epic Battle",
+    "service": "html5-games",
+    "url": "https://zebrapro.herokuapp.com/web/_aHR0cHM6Ly9odG1sNS1nYW1lcy5pbw==_/game/stickman-fighter-epic-battle/",  
+    "premium": false
+  },
   "Circle Shooter": {
     "name": "Circle Shooter",
     "service": "html5-games",
@@ -31,6 +37,13 @@
     "service": "offline",
     "premium": false,
     "mobile": true
+  },
+    "G-Switch 3": {
+    "name": "G-Switch 3",
+    "service": "html5-games",
+    "url":"https://zebrapro.herokuapp.com/web/_aHR0cHM6Ly9odG1sNS1nYW1lcy5pbw==_/game/g-switch-3/",
+    "premium": false,
+    "mobile": false
   },
   "Catch Dots": {
     "name": "Catch Dots",
@@ -212,5 +225,17 @@
     "height": 900,
     "mobile": false,
     "premium": false
+  },
+    "Helifight": {
+    "name": "Helifight",
+    "service": "html5-games",
+    "premium": true,
+    "mobile": false
+  },
+    "Bob The Robber": {
+    "name": "Bob The Robber",
+    "service": "html5-games",
+    "premium": true,
+    "mobile": false
   }
 }
