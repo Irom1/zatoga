@@ -220,7 +220,7 @@
   "Paper-io": {
     "name": "Paper-io",
     "service": "custom",
-    "url": "https://apwebsurf.herokuapp.com/web/_aHR0cHM6Ly9wYXBlci1pby5jb20=_/",
+    "url": "https://zatogo.herokuapp.com/web/_aHR0cHM6Ly9wYXBlci1pby5jb20=_/",
     "width": 900,
     "height": 700,
     "mobile": false,
