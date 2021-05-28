@@ -1,8 +1,26 @@
 {
+  "Pac-Man": {
+    "name": "Pac-Man",
+    "service": "custom",
+    "url": "https://zebrapro.herokuapp.com/web/_aHR0cHM6Ly9jYXRjb3VwLnh5eg==_/archive/g/pacman/",
+    "width": 900,
+    "height": 700,
+    "mobile": false,
+    "premium": false
+  },
   "Doodle Jump": {
     "name": "Doodle Jump",
     "service": "offline",
     "premium": false
+  },
+    "The House": {
+    "name": "The House",
+    "service": "custom",
+    "premium": false,
+    "url": "https://the-house.arturkot.pl/",
+    "width": 900,
+    "height": 900,
+    "mobile": false
   },
     "Helifight": {
     "name": "Helifight",
@@ -31,6 +49,15 @@
     "name": "Ninja Master",
     "service": "html5-games",
     "premium": false,
+    "mobile": true
+  },
+    "Flappy Bird": {
+    "name": "Flappy Bird",
+    "service": "custom",
+    "premium": false,
+    "url": "https://zebrapro.herokuapp.com/web/_aHR0cHM6Ly9jYXRjb3VwLnh5eg==_/archive/g/flappybird/",
+    "width": 500,
+    "height": 900,
     "mobile": true
   },
   "Blob Tank Wars": {
@@ -243,5 +270,14 @@
     "service": "html5-games",
     "premium": true,
     "mobile": false
+  },
+    "xx142-b2.exe": {
+    "name": "xx142-b2.exe",
+    "service": "custom",
+    "url": "https://zebrapro.herokuapp.com/web/_aHR0cHM6Ly9jYXRjb3VwLnh5eg==_/archive/g/xx142-b2exe/",
+    "width": 900,
+    "height": 900,
+    "mobile": false,
+    "premium": false
   }
 }
