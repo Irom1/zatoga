@@ -8,7 +8,7 @@ let stable = !beta;
 if(navigator.onLine) {
   let arcScript = document.createElement("script");
   arcScript.async = true;
-  arcScript.src = "https://arc.io/widget.min.js#Rpa8mxM6";
+  arcScript.src = "https://arc.io/widget.min.js#4Jpe4Zp2";
   document.body.appendChild(arcScript);
 }
 
