@@ -86,6 +86,13 @@
     "premium": false,
     "mobile": true
   },
+  "Fruit Ninja": {
+    "name": "Fruit Ninja",
+    "service": "custom",
+    "url": "https://Fruit-Ninja-Game-Demo.numcomx.repl.co",
+    "premium": false,
+    "mobile": false
+  },
   "Fireboy and Watergirl 5": {
     "name": "Fireboy and Watergirl 5",
     "service": "html5-games",
@@ -349,10 +356,12 @@
     "premium": false,
     "mobile": false
   },
-    "Slush.io": {
-    "name": "Slush.io (Multiplayer/Single Player - BETA)",
+    "Rob The Bank": {
+    "name": "Rob The Bank",
     "service": "custom",
-    "url": "https://zappr.herokuapp.com/web/_aHR0cHM6Ly9zbHVzaC5pbw==_/",
+    "url": "https://money-game-jam--caialexander2914.repl.co/",
+    "width": 700,
+    "height": 900,
     "premium": false,
     "mobile": false
   }
