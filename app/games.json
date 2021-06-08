@@ -344,12 +344,6 @@
     "mobile": false,
     "premium": false
   },
-  "Road of Rampage": {
-    "name": "Road of Rampage",
-    "service": "html5-games",
-    "premium": false,
-    "mobile": false
-  },
   "Sudoku": {
     "name": "Sudoku",
     "service": "html5-games",
@@ -363,10 +357,24 @@
     "premium": false,
     "mobile": false
   },
-  "Dead Zed": {
+    "Defly.io": {
+    "name": "Defly.io",
+    "service": "custom",
+    "url": "https://zatogo.herokuapp.com/web/_aHR0cHM6Ly9kZWZseS5pbw==_/",
+    "premium": false,
+    "mobile": false
+  },
+    "Dead Zed": {
     "name": "Dead Zed",
+    "service": "html5-games",
+    "premium": false,
+    "mobile": false
+  },
+    "Road of Rampage": {
+    "name": "Road of Rampage",
     "service": "html5-games",
     "premium": false,
     "mobile": false
   }
 }
+
