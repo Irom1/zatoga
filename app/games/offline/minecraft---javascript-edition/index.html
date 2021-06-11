@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<link rel="icon" href="https://sketch.io/render/sk-1521a06b9ae99865a3e491a65a40f9bd.jpeg" type="image/icon type">
-		<title>Minecraft-JS</title>
+		<title>Minecraft - Javascript Edition</title>
 		<link id="vtfont" href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/media/style.css"/>
 <meta name="apple-mobile-web-app-status-bar" content="seagreen" />
@@ -1002,7 +1002,7 @@ function MineKhan() {
 
 	//globals
 	//{
-	let version = "Alpha 0.7.0"
+	let version = "Alpha 0.7.1"
 	let reach = 19 // Max distance player can place or break blocks
 	let sky = [0.33, 0.54, 0.72] // 0 to 1 RGB color scale
 	let superflat = false
@@ -4275,7 +4275,7 @@ function MineKhan() {
 		const always = () => true
 
 		// Main menu buttons
-		Button.add(width / 2, height / 2 - 20, 400, 40, "Singleplayer", "main menu", r => changeScene("loadsave menu"))
+		Button.add(width / 2, height / 2 - 20, 400, 40, "Launch Minecraft", "main menu", r => changeScene("loadsave menu"))
 		//Button.add(width / 2, height / 2 + 35, 400, 40, "Multiplayer", "main menu", nothing, always, "Multiplayer isn't possible at this time.")
 		Button.add(width / 2, height / 2 + 35, 400, 40, "Options", "main menu", r => changeScene("options"))
 
@@ -5342,7 +5342,7 @@ function MineKhan() {
 			fill(220)
 			ctx.font = "20px VT323"
 			ctx.textAlign = 'left'
-			text("Minecraft " + version, width - (width - 2), height - 2)
+			text("Minecraft " + version + " by @Retrospicer", width - (width - 2), height - 2)
 		}
 
 		drawScreens.play = () => {

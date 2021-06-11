@@ -203,11 +203,6 @@
     "service": "html5-games",
     "premium": false
   },
-  "Minecraft-JS": {
-    "name": "Minecraft-JS",
-    "service": "offline",
-    "premium": false
-  },
   "Air Hockey": {
     "name": "Air Hockey",
     "service": "html5-games",
@@ -363,6 +358,11 @@
     "url": "https://zatogo.herokuapp.com/web/_aHR0cHM6Ly9kZWZseS5pbw==_/",
     "premium": false,
     "mobile": false
+  },
+  "Minecraft - Javascript Edition": {
+    "name": "Minecraft - Javascript Edition",
+    "service": "offline",
+    "premium": false
   },
     "Dead Zed": {
     "name": "Dead Zed",
