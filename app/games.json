@@ -362,6 +362,9 @@
   "Minecraft - Javascript Edition": {
     "name": "Minecraft - Javascript Edition",
     "service": "offline",
+    "width": 900,
+    "height": 700,
+    "mobile": false,
     "premium": false
   },
     "Dead Zed": {
