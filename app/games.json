@@ -396,6 +396,12 @@
     "service": "html5-games",
     "premium": false,
     "mobile": false
+  },
+  "Tomb Runner": {
+    "name": "Tomb Runner",
+    "service": "html5-games",
+    "premium": false,
+    "mobile": false
   }
 }
 
