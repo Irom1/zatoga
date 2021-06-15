@@ -209,6 +209,12 @@
     "service": "html5-games",
     "premium": false
   },
+    "Road of Rampage": {
+    "name": "Road of Rampage",
+    "service": "html5-games",
+    "premium": false,
+    "mobile": false
+  },
   "Air Hockey": {
     "name": "Air Hockey",
     "service": "html5-games",
@@ -399,12 +405,6 @@
     "height": 700,
     "mobile": false,
     "premium": false
-  },
-    "Road of Rampage": {
-    "name": "Road of Rampage",
-    "service": "html5-games",
-    "premium": false,
-    "mobile": false
   },
   "Tomb Runner": {
     "name": "Tomb Runner",

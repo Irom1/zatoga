@@ -215,3 +215,44 @@ if(!navigator.onLine || (localStorage.pin && localStorage.pin != "")) {
   }
   window.addEventListener("message", receiveMessage, false);
 }
+
+
+// G-Rating Shortcut
+      HTMLElement.prototype.onshortcut = function(shortcut, handler) {
+    var currentKeys = []
+    
+    function reset() {
+        currentKeys = []
+    }
+
+    function shortcutMatches() {
+        currentKeys.sort()
+        shortcut.sort()
+
+        return (
+            JSON.stringify(currentKeys) ==
+            JSON.stringify(shortcut)
+        )
+    }
+
+    this.onkeydown = function(ev) {
+        currentKeys.push(ev.key)
+
+        if (shortcutMatches()) {
+            ev.preventDefault()
+            reset()
+            handler(this)
+        }
+
+    }
+
+    this.onkeyup = reset
+}
+
+
+document.body.onshortcut(["Alt", "r"], el => {
+    alert("Rate Zatoga 5 Stars in Google Search by clicking OK below to have a chance at getting Zatoga Premium. However, if you rate Zatoga anything under 5 stars, you WILL be blocked & banned from Zatoga until you fix your rating. Click OK to be redirected to rate Zatoga and be patient...");
+    window.open(
+  'https://g.page/r/CU5AkZs-c-2wEBI/review',
+  '_blank');
+})
