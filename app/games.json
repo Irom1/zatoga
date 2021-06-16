@@ -155,6 +155,13 @@
     "service": "html5-games",
     "premium": false
   },
+    "Snake": {
+    "name": "Snake",
+    "service": "custom",
+    "url": "https://websurf.repl.co/unblocker/https:/www.mathplayground.com/snake/index.html",
+    "premium": false,
+    "mobile": false
+  },
   "Tug The Table": {
     "name": "Tug The Table",
     "service": "html5-games",
@@ -264,6 +271,13 @@
     "premium": false,
     "mobile": false
   },
+    "Mountain Bike Racer": {
+    "name": "Mountain Bike Racer",
+    "service": "custom",
+    "url": "https://websurf.repl.co/unblocker/https:/www.mathplayground.com/mountain-bike-racer/index.html",
+    "premium": false,
+    "mobile": false
+  },
   "Slither.io": {
     "name": "Slither.io",
     "service": "custom",
@@ -355,6 +369,20 @@
     "premium": false,
     "mobile": false
   },
+    "Drift Boss": {
+    "name": "Drift Boss",
+    "service": "custom",
+    "url": "https://websurf.repl.co/unblocker/https:/www.mathplayground.com/drift-boss/index.html",
+    "premium": false,
+    "mobile": false
+  },
+    "Rhino Rink": {
+    "name": "Rhino Rink",
+    "service": "custom",
+    "url": "https://websurf.repl.co/unblocker/https:/www.mathplayground.com/mobile_rhino_rink/index.html",
+    "premium": false,
+    "mobile": false
+  },  
     "Defly.io": {
     "name": "Defly.io",
     "service": "custom",
@@ -370,6 +398,13 @@
     "height": 900,
     "mobile": false,
     "premium": false
+  },
+    "X-Trench Run": {
+    "name": "X-Trench Run",
+    "service": "custom",
+    "url": "https://websurf.repl.co/unblocker/https:/www.mathplayground.com/x-trench-run/index.html",
+    "premium": false,
+    "mobile": false
   },
    "1v1.LOL": {
     "name": "1v1.LOL",
@@ -409,6 +444,13 @@
   "Tomb Runner": {
     "name": "Tomb Runner",
     "service": "html5-games",
+    "premium": false,
+    "mobile": false
+  },
+    "Giant Rabbit Run (Chungus)": {
+    "name": "Giant Rabbit Run (Chungus)",
+    "service": "custom",
+    "url": "https://websurf.repl.co/unblocker/https:/www.mathplayground.com/giant-rabbit-run/index.html",
     "premium": false,
     "mobile": false
   },
