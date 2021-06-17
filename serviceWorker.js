@@ -2,7 +2,7 @@ if(navigator.onLine) {
   importScripts('https://arc.io/arc-sw-core.js');
 }
 
-var version = 5.115;
+var version = 2.0;
 
 let staticZatoga = "zatoga-v2";
 let assets = [
@@ -23,7 +23,7 @@ let assets = [
   "/favicon.ico",
   "/app/premium/",
   "/app/premium/view.html",
-  "/app/games/offline/minecraft-js/",
+  "/app/games/offline/minecraft---javascript-edition/",
   "/app/games/offline/doodle-jump/",
   "/app/games/offline/doodle-jump/background.png",
   "/app/games/offline/doodle-jump/border.png",
