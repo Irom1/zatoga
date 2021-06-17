@@ -5,7 +5,7 @@ var beta = (location.host == "zatoga.irom1.repl.co");
 let stable = !beta;
 
 // Add ARC to webpages that are online
-if(navigator.onLine) {
+if(navigator.onLine && location.pathname != "/") {
   let arcScript = document.createElement("script");
   arcScript.async = true;
   arcScript.src = "https://arc.io/widget.min.js#4Jpe4Zp2";
