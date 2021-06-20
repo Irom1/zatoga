@@ -460,15 +460,6 @@
     "premium": false,
     "mobile": false
   },
-    "Pou: Virtual Pet": {
-    "name": "Pou: Virtual Pet",
-    "service": "custom",
-    "url": "https://websurf.repl.co/unblocker/https:/html5.gamemonetize.com/jyeazqa0x7ym5xcq22g9mgv74s5tift1/",
-    "width": 500,
-    "height": 800,
-    "mobile": false,
-    "premium": false
-  },
     "JustBuild.LOL": {
     "name": "JustBuild.LOL",
     "service": "custom",
@@ -491,6 +482,15 @@
     "url":"https://aefrrfq.herokuapp.com/web/_aHR0cHM6Ly8xdjEubG9s_/",
     "width": 900,
     "height": 900,
+    "mobile": false,
+    "premium": false
+  },
+    "Pou: Virtual Pet": {
+    "name": "Pou: Virtual Pet",
+    "service": "custom",
+    "url": "https://websurf.repl.co/unblocker/https:/html5.gamemonetize.com/jyeazqa0x7ym5xcq22g9mgv74s5tift1/",
+    "width": 490,
+    "height": 800,
     "mobile": false,
     "premium": false
   },
