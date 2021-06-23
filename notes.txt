@@ -12,7 +12,7 @@ For any game to work offline:
 <link rel="stylesheet" href="/media/style.css"/>
 <meta name="apple-mobile-web-app-status-bar" content="seagreen" />
 <meta name="theme-color" content="seagreen" />
-<script async src="https://arc.io/widget.min.js#4Jpe4Zp2"></script>
+<script async src="https://arc.io/widget.min.js#7h7Kngit"></script>
 ----> In body:
 <span class="back top" onclick="window.location.href='/app/games/offline/';"></span>
 <script src="/media/index.js"></script>
