@@ -19,6 +19,19 @@ a {
   box-sizing: border-box;
   position: relative;
 }
+a.link {
+  background-color: #000000;
+  cursor: pointer;
+  padding: none;
+  border-radius: none;
+  text-align: center;
+  display: block;
+  color: white;
+  text-decoration: none;
+  width: none;
+  box-sizing: border-box;
+  position: relative;
+}
 a.mini {
   display: inline-block;
   width: auto;
