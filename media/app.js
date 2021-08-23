@@ -119,7 +119,9 @@ if(onApp) {
     "Why do work when you can play?",
     "Play all the latest games unblocked!",
     "It's the easiest way to have fun!",
-    "Refer 2 people for Premium!"
+    "Refer 2 people for Premium!",
+    "Check the info page for new updates!",
+    "Use the shortcut Alt+r for premium!"
     ];
   var message = document.getElementById("message");
   message.innerText = messages[Math.floor(Math.random() * messages.length)];
