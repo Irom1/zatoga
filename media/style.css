@@ -19,6 +19,11 @@ a {
   box-sizing: border-box;
   position: relative;
 }
+
+.game {
+  border-color: 1.5px solid #1E90FF;
+}
+
 a.link {
   background-color: #000000;
   cursor: pointer;
