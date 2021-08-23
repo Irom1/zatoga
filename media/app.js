@@ -39,7 +39,6 @@ if ("serviceWorker" in navigator) {
             window.location = "/app/";
         });
     }, 1000);
-            location.reload();
           }
 		    }
 	    }, function(err) {
