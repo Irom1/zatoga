@@ -86,9 +86,9 @@
             gameElems += "<span class='game'><a onclick='if(window.loggedOut){window.loggedOut()} else if(!this.classList.contains(`disabled`))location.href=`/app/games/offline/" + gameString + "/`'>▶️️️ " + game["name"] + "</a><br></span>"; 
           } else if(game["premium"]) {
             latestGameCount++;
-            gameElems += "<span class='game' title='This game requires premium' style='display:block;'><a class='premium disabled' style='color:white;background-color:seagreen;border: solid #1E90FF;' onclick='if(window.loggedOut){window.loggedOut()} else if(!this.classList.contains(`disabled`))location.href=`/app/games/online.html?game=" + gameString + "&url=" + game["url"] + game["width"] + game["height"] + game["height"] + "`'>▶️️️ " + game["name"] + "</a><br></span>";
+            gameElems += "<span class='game' title='This game requires premium' style='display:block;'><a class='premium disabled' style='color:white;background-color:seagreen;border: 1px solid #1E90FF;' onclick='if(window.loggedOut){window.loggedOut()} else if(!this.classList.contains(`disabled`))location.href=`/app/games/online.html?game=" + gameString + "&url=" + game["url"] + game["width"] + game["height"] + game["height"] + "`'>▶️️️ " + game["name"] + "</a><br></span>";
           } else {
-            gameElems += "<span class='game' title='This game requires internet' style='display:block;'><a class='internet disabled game' style='color:white;background-color:seagreen;border: solid #1E90FF;' onclick='if(window.loggedOut){window.loggedOut()} else if(!this.classList.contains(`disabled`))location.href=`/app/games/online.html?game=" + gameString + "&url=" + game["url"] + game["width"] + game["height"] + "`'>▶️️️ " + game["name"] + "</a><br></span>";
+            gameElems += "<span class='game' title='This game requires internet' style='display:block;'><a class='internet disabled game' style='color:white;background-color:seagreen;border: 1px solid #1E90FF;' onclick='if(window.loggedOut){window.loggedOut()} else if(!this.classList.contains(`disabled`))location.href=`/app/games/online.html?game=" + gameString + "&url=" + game["url"] + game["width"] + game["height"] + "`'>▶️️️ " + game["name"] + "</a><br></span>";
           }
         }
         latestGameCount = 0;
