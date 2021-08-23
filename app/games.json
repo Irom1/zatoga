@@ -2,7 +2,7 @@
   "Pac-Man": {
     "name": "Pac-Man",
     "service": "custom",
-    "url": "https://aefrrfq.herokuapp.com/web/_aHR0cHM6Ly9jYXRjb3VwLnh5eg==_/archive/g/pacman/",
+    "url": "https://theduy.herokuapp.com/web/_aHR0cHM6Ly9jYXRjb3VwLnh5eg==_/archive/g/pacman/",
     "width": 900,
     "height": 700,
     "mobile": false,
@@ -45,7 +45,7 @@
   "Stickman-Fighter: Epic Battle": {
     "name": "Stickman-Fighter: Epic Battle",
     "service": "html5-games",
-    "url": "https://aefrrfq.herokuapp.com/web/_aHR0cHM6Ly9odG1sNS1nYW1lcy5pbw==_/game/stickman-fighter-epic-battle/",
+    "url": "https://theduy.herokuapp.com/web/_aHR0cHM6Ly9odG1sNS1nYW1lcy5pbw==_/game/stickman-fighter-epic-battle/",
     "premium": false
   },
     "Giant Rabbit Run (Chungus)": {
@@ -77,7 +77,7 @@
     "name": "Flappy Bird",
     "service": "custom",
     "premium": false,
-    "url": "https://aefrrfq.herokuapp.com/web/_aHR0cHM6Ly9jYXRjb3VwLnh5eg==_/archive/g/flappybird/",
+    "url": "https://theduy.herokuapp.com/web/_aHR0cHM6Ly9jYXRjb3VwLnh5eg==_/archive/g/flappybird/",
     "width": 500,
     "height": 900,
     "mobile": true
@@ -96,7 +96,7 @@
   "G-Switch 3": {
     "name": "G-Switch 3",
     "service": "html5-games",
-    "url": "https://aefrrfq.herokuapp.com/web/_aHR0cHM6Ly9odG1sNS1nYW1lcy5pbw==_/game/g-switch-3/",
+    "url": "https://theduy.herokuapp.com/web/_aHR0cHM6Ly9odG1sNS1nYW1lcy5pbw==_/game/g-switch-3/",
     "premium": false,
     "mobile": false
   },
@@ -227,7 +227,7 @@
     "name": "Surviv.io",
     "service": "custom",
     "premium": false,
-    "url": "https://aefrrfq.herokuapp.com/web/_aHR0cHM6Ly9zdXJ2aXYuaW8=_/",
+    "url": "https://theduy.herokuapp.com/web/_aHR0cHM6Ly9zdXJ2aXYuaW8=_/",
     "width": 900,
     "height": 900,
     "mobile": false
@@ -313,6 +313,13 @@
     "premium": false,
     "mobile": false
   },
+    "Stunt Car Challenge 3": {
+    "name": "Stunt Car Challenge 3",
+    "service": "custom",
+    "url": "https://websurf.repl.co/unblocker/https:/html5.gamemonetize.com/t6o1uc5zow2fpjk6u5i2kzh4xmt4teem/",
+    "premium": false,
+    "mobile": false
+  },
     "Mountain Bike Racer": {
     "name": "Mountain Bike Racer",
     "service": "custom",
@@ -330,7 +337,7 @@
   "Slither.io": {
     "name": "Slither.io",
     "service": "custom",
-    "url": "https://aefrrfq.herokuapp.com/web/_aHR0cDovL3NsaXRoZXIuaW8=_/",
+    "url": "https://theduy.herokuapp.com/web/_aHR0cDovL3NsaXRoZXIuaW8=_/",
     "width": 900,
     "height": 700,
     "mobile": false,
@@ -384,7 +391,7 @@
   "Zombs Royale": {
     "name": "Zombs Royale",
     "service": "custom",
-    "url": "https://aefrrfq.herokuapp.com/web/_aHR0cHM6Ly96b21ic3JveWFsZS5pbw==_/",
+    "url": "https://theduy.herokuapp.com/web/_aHR0cHM6Ly96b21ic3JveWFsZS5pbw==_/",
     "width": 900,
     "height": 900,
     "mobile": false,
@@ -420,7 +427,7 @@
   "xx142-b2.exe": {
     "name": "xx142-b2.exe",
     "service": "custom",
-    "url": "https://aefrrfq.herokuapp.com/web/_aHR0cHM6Ly9jYXRjb3VwLnh5eg==_/archive/g/xx142-b2exe/",
+    "url": "https://theduy.herokuapp.com/web/_aHR0cHM6Ly9jYXRjb3VwLnh5eg==_/archive/g/xx142-b2exe/",
     "width": 900,
     "height": 900,
     "mobile": false,
@@ -435,7 +442,7 @@
   "Narwhale.io": {
     "name": "Narwhale.io",
     "service": "custom",
-    "url": "https://aefrrfq.herokuapp.com/web/_aHR0cDovL25hcndoYWxlLmlv_/",
+    "url": "https://theduy.herokuapp.com/web/_aHR0cDovL25hcndoYWxlLmlv_/",
     "premium": false,
     "mobile": false
   },
@@ -479,7 +486,7 @@
    "1v1.LOL": {
     "name": "1v1.LOL",
     "service": "custom",
-    "url":"https://aefrrfq.herokuapp.com/web/_aHR0cHM6Ly8xdjEubG9s_/",
+    "url":"https://theduy.herokuapp.com/web/_aHR0cHM6Ly8xdjEubG9s_/",
     "width": 900,
     "height": 900,
     "mobile": false,
@@ -527,9 +534,17 @@
     "mobile": false,
     "premium": false
   },
+
   "Tomb Runner": {
     "name": "Tomb Runner",
     "service": "html5-games",
+    "premium": false,
+    "mobile": false
+  },
+  "Dead Paradise: Race Shooter" : {
+    "name": "Dead Paradise: Race Shooter ",
+    "service": "custom",
+    "url": "https://websurf.repl.co/unblocker/https:/html5.gamemonetize.com/61mrcblllfemg06dbr1lmu53e04e3p29/",
     "premium": false,
     "mobile": false
   },
