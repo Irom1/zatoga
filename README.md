@@ -13,7 +13,10 @@ An offline PWA to easily get distracted with by:
 * Fast: https://zatoga.irom.ga/
 * Fast: https://zatoga.netlify.app/
 * Stable: https://zatoga.pages.dev/
-* Testing: https://zatoga.irom1.repl.co/
+* Testing: https://zatoga-beta.irom1.repl.co/
+* Stable: https://zatoga.vercel.app/
+* Stable: https://zatoga-irom1.vercel.app/
+* Stable: https://zatoga-git-master-irom1.vercel.app/
 
 ### Credits
 The Progressive Web App is made by me but the games were not made by me. Game credits are below:
