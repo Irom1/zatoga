@@ -28,17 +28,8 @@ if ("serviceWorker" in navigator) {
       .then(function(registration) {
 		    registration.onupdatefound = function() {
           if(inApp) {
-    setTimeout(function() {
-        swal({
-            title: "Update Found!",
-            text: "An update has been found for Zatoga. Click the button below to update.",
-            type: "success",
-            button: "Update Zatoga",
-
-        }, function() {
-            window.location = "/app/";
-        });
-    }, 1000);
+alert("An update has been found for Zatoga. Click the button below to update.");
+            location.reload();
           }
 		    }
 	    }, function(err) {
