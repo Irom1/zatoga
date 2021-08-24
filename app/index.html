@@ -56,7 +56,7 @@
       <p>Please search again...</p>
       <small>Play more games with Premium!</small>
     </span><br>
-    <center><span>&copy; 2021 Zatoga</span></center>
+    <center><span style="color:#1E90FF;" onclick="window.location.href='/app/legal/terms-of-service.html'">Terms of Service</span>&nbsp;&bullet;&nbsp;<span style="color:#1E90FF;" onclick="window.location.href='/app/legal/privacy-policy.html'">Privacy Policy</span><br><span>&copy; 2021 Zatoga</span></center>
     <script src="/media/app.js"></script>
     <script> 
       async function loadGames(){
@@ -88,9 +88,9 @@
             gameElems += "<span class='game'><a onclick='if(window.loggedOut){window.loggedOut()} else if(!this.classList.contains(`disabled`))location.href=`/app/games/offline/" + gameString + "/`'>▶️️️ " + game["name"] + "</a><br></span>"; 
           } else if(game["premium"]) {
             latestGameCount++;
-            gameElems += "<span class='game' title='This game requires premium' style='display:block;'><a class='premium disabled' style='color:white;background-color:seagreen;border: 1.1px solid #FFC42E;' onclick='if(window.loggedOut){window.loggedOut()} else if(!this.classList.contains(`disabled`)){location.href=`/app/games/online.html?game=" + gameString + "&url=" + game["url"] + game["width"] + game["height"] + game["height"] + "`}else{location.href=`/app/premium/`}'>▶️️️ " + game["name"] + "</a><br></span>";
+            gameElems += "<span class='game' title='This game requires premium' style='display:block;'><a class='premium disabled' style='color:white;background-color:seagreen;border: 1.6px solid #FFC42E;' onclick='if(window.loggedOut){window.loggedOut()} else if(!this.classList.contains(`disabled`)){location.href=`/app/games/online.html?game=" + gameString + "&url=" + game["url"] + game["width"] + game["height"] + game["height"] + "`}else{location.href=`/app/premium/`}'>▶️️️ " + game["name"] + "</a><br></span>";
           } else {
-            gameElems += "<span class='game' title='This game requires internet' style='display:block;'><a class='internet disabled game' style='color:white;background-color:seagreen;border: 1px solid #1E90FF;' onclick='if(window.loggedOut){window.loggedOut()} else if(!this.classList.contains(`disabled`)){location.href=`/app/games/online.html?game=" + gameString + "&url=" + game["url"] + game["width"] + game["height"] + "`}else{alert(`This game requires internet connection. Reload if you still have issues while connected to internet.`)}'>▶️️️ " + game["name"] + "</a><br></span>";
+            gameElems += "<span class='game' title='This game requires internet' style='display:block;'><a class='internet disabled game' style='color:white;background-color:seagreen;border: 1.5px solid #1E90FF;' onclick='if(window.loggedOut){window.loggedOut()} else if(!this.classList.contains(`disabled`)){location.href=`/app/games/online.html?game=" + gameString + "&url=" + game["url"] + game["width"] + game["height"] + "`}else{alert(`This game requires internet connection. Reload if you still have issues while connected to internet.`)}'>▶️️️ " + game["name"] + "</a><br></span>";
           }
         }
         latestGameCount = 0;
