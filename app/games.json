@@ -548,6 +548,15 @@
     "premium": false,
     "mobile": false
   },
+  "S.U.R.F.": {
+    "name": "S.U.R.F.",
+    "service": "custom",
+    "url": "https://websurf.repl.co/unblocker/https:/surf.jackbuehner.com/",
+    "width": 900,
+    "height": 700,
+    "mobile": false,
+    "premium": false
+  },
     "Temple Run 2": {
     "name": "Temple Run 2",
     "service": "custom",
