@@ -2,7 +2,7 @@
   "Pac-Man": {
     "name": "Pac-Man",
     "service": "custom",
-    "url": "https://theduyr.herokuapp.com/web/_aHR0cHM6Ly9jYXRjb3VwLnh5eg==_/archive/g/pacman/",
+    "url": "https://theduki.herokuapp.com/web/_aHR0cHM6Ly9jYXRjb3VwLnh5eg==_/archive/g/pacman/",
     "width": 900,
     "height": 700,
     "mobile": false,
@@ -45,7 +45,7 @@
   "Stickman-Fighter: Epic Battle": {
     "name": "Stickman-Fighter: Epic Battle",
     "service": "html5-games",
-    "url": "https://theduyr.herokuapp.com/web/_aHR0cHM6Ly9odG1sNS1nYW1lcy5pbw==_/game/stickman-fighter-epic-battle/",
+    "url": "https://theduki.herokuapp.com/web/_aHR0cHM6Ly9odG1sNS1nYW1lcy5pbw==_/game/stickman-fighter-epic-battle/",
     "premium": false
   },
     "Giant Rabbit Run (Chungus)": {
@@ -77,7 +77,7 @@
     "name": "Flappy Bird",
     "service": "custom",
     "premium": false,
-    "url": "https://theduyr.herokuapp.com/web/_aHR0cHM6Ly9jYXRjb3VwLnh5eg==_/archive/g/flappybird/",
+    "url": "https://theduki.herokuapp.com/web/_aHR0cHM6Ly9jYXRjb3VwLnh5eg==_/archive/g/flappybird/",
     "width": 500,
     "height": 900,
     "mobile": true
@@ -96,7 +96,7 @@
   "G-Switch 3": {
     "name": "G-Switch 3",
     "service": "html5-games",
-    "url": "https://theduyr.herokuapp.com/web/_aHR0cHM6Ly9odG1sNS1nYW1lcy5pbw==_/game/g-switch-3/",
+    "url": "https://theduki.herokuapp.com/web/_aHR0cHM6Ly9odG1sNS1nYW1lcy5pbw==_/game/g-switch-3/",
     "premium": false,
     "mobile": false
   },
@@ -154,7 +154,7 @@
   "Moto X3M Pool Party": {
     "name": "Moto X3M Pool Party",
     "service": "html5-games",
-    "url": "https://theduyr.herokuapp.com/web/_aHR0cHM6Ly9odG1sNS1nYW1lcy5pbw==_/game/moto-xm-pool-party/",
+    "url": "https://theduki.herokuapp.com/web/_aHR0cHM6Ly9odG1sNS1nYW1lcy5pbw==_/game/moto-xm-pool-party/",
     "premium": true
   },
   "Tank Defender": {
@@ -227,7 +227,7 @@
     "name": "Surviv.io",
     "service": "custom",
     "premium": false,
-    "url": "https://theduyr.herokuapp.com/web/_aHR0cHM6Ly9zdXJ2aXYuaW8=_/",
+    "url": "https://theduki.herokuapp.com/web/_aHR0cHM6Ly9zdXJ2aXYuaW8=_/",
     "width": 900,
     "height": 900,
     "mobile": false
@@ -279,7 +279,7 @@
     "name": "Slope",
     "service": "y8",
     "premium": false,
-    "url": "https://theduyr.herokuapp.com/web/_aHR0cHM6Ly9zdG9yYWdlLnk4LmNvbQ==_/y8-studio/unity/joll/slope/",
+    "url": "https://theduki.herokuapp.com/web/_aHR0cHM6Ly9zdG9yYWdlLnk4LmNvbQ==_/y8-studio/unity/joll/slope/",
     "width": 900,
     "height": 640,
     "mobile": false
@@ -337,7 +337,7 @@
   "Slither.io": {
     "name": "Slither.io",
     "service": "custom",
-    "url": "https://theduyr.herokuapp.com/web/_aHR0cDovL3NsaXRoZXIuaW8=_/",
+    "url": "https://theduki.herokuapp.com/web/_aHR0cDovL3NsaXRoZXIuaW8=_/",
     "width": 900,
     "height": 700,
     "mobile": false,
@@ -362,7 +362,7 @@
   "Vex 4": {
     "name": "Vex 4",
     "service": "custom",
-    "url": "https://theduyr.herokuapp.com/web/_aHR0cHM6Ly9odG1sNS5nYW1lZGlzdHJpYnV0aW9uLmNvbQ==_/rvvASMiM/80e6a5ae477f4d4fbcd1ea293d10087d/%3Fgd_zone_config%3DeyJwYXJlbnRVUkwiOiJodHRwczovL2tpemkuY29tLyIsInBhcmVudERvbWFpbiI6ImtpemkuY29tIiwidG9wRG9tYWluIjoia2l6aS5jb20iLCJoYXNJbXByZXNzaW9uIjp0cnVlLCJsb2FkZXJFbmFibGVkIjp0cnVlLCJob3N0IjoiaHRtbDUuZ2FtZWRpc3RyaWJ1dGlvbi5jb20iLCJ2ZXJzaW9uIjoiMS4yLjgifQ%253D%253D",
+    "url": "https://theduki.herokuapp.com/web/_aHR0cHM6Ly9odG1sNS5nYW1lZGlzdHJpYnV0aW9uLmNvbQ==_/rvvASMiM/80e6a5ae477f4d4fbcd1ea293d10087d/%3Fgd_zone_config%3DeyJwYXJlbnRVUkwiOiJodHRwczovL2tpemkuY29tLyIsInBhcmVudERvbWFpbiI6ImtpemkuY29tIiwidG9wRG9tYWluIjoia2l6aS5jb20iLCJoYXNJbXByZXNzaW9uIjp0cnVlLCJsb2FkZXJFbmFibGVkIjp0cnVlLCJob3N0IjoiaHRtbDUuZ2FtZWRpc3RyaWJ1dGlvbi5jb20iLCJ2ZXJzaW9uIjoiMS4yLjgifQ%253D%253D",
     "width": 900,
     "height": 700,
     "mobile": false,
@@ -384,14 +384,14 @@
     "Outlive.AI": {
     "name": "Outlive.AI",
     "service": "custom",
-    "url": "http://theduyr.herokuapp.com/web/_aHR0cHM6Ly9vdXRsaXZlLmFp_/",
+    "url": "http://theduki.herokuapp.com/web/_aHR0cHM6Ly9vdXRsaXZlLmFp_/",
     "mobile": false,
     "premium": false
   },
   "Zombs Royale": {
     "name": "Zombs Royale",
     "service": "custom",
-    "url": "https://theduyr.herokuapp.com/web/_aHR0cHM6Ly96b21ic3JveWFsZS5pbw==_/",
+    "url": "https://theduki.herokuapp.com/web/_aHR0cHM6Ly96b21ic3JveWFsZS5pbw==_/",
     "width": 900,
     "height": 900,
     "mobile": false,
@@ -406,7 +406,7 @@
   "Penalty Kick Online": {
     "name": "Penalty Kick Online",
     "service": "custom",
-    "url": "https://theduyr.herokuapp.com/web/_aHR0cHM6Ly9odG1sNS1nYW1lcy5pbw==_/game/penalty-kick-online/",
+    "url": "https://theduki.herokuapp.com/web/_aHR0cHM6Ly9odG1sNS1nYW1lcy5pbw==_/game/penalty-kick-online/",
     "width": 900,
     "height": 470,
     "mobile": false,
@@ -427,7 +427,7 @@
   "xx142-b2.exe": {
     "name": "xx142-b2.exe",
     "service": "custom",
-    "url": "https://theduyr.herokuapp.com/web/_aHR0cHM6Ly9jYXRjb3VwLnh5eg==_/archive/g/xx142-b2exe/",
+    "url": "https://theduki.herokuapp.com/web/_aHR0cHM6Ly9jYXRjb3VwLnh5eg==_/archive/g/xx142-b2exe/",
     "width": 900,
     "height": 900,
     "mobile": false,
@@ -442,7 +442,7 @@
   "Narwhale.io": {
     "name": "Narwhale.io",
     "service": "custom",
-    "url": "https://theduyr.herokuapp.com/web/_aHR0cDovL25hcndoYWxlLmlv_/",
+    "url": "https://w4tg.herokuapp.com/web/_aHR0cDovL25hcndoYWxlLmlv_/",
     "premium": false,
     "mobile": false
   },
@@ -463,14 +463,14 @@
     "Defly.io": {
     "name": "Defly.io",
     "service": "custom",
-    "url": "https://w4tg.herokuapp.com/web/_aHR0cHM6Ly9kZWZseS5pbw==_/",
+    "url": "https://theduki.herokuapp.com/web/_aHR0cHM6Ly9kZWZseS5pbw==_/",
     "premium": false,
     "mobile": false
   },
     "JustBuild.LOL": {
     "name": "JustBuild.LOL",
     "service": "custom",
-    "url":"https://theduyr.herokuapp.com/web/_aHR0cHM6Ly93d3cuanVzdGJ1aWxkLmxvbA==_/",
+    "url":"https://theduki.herokuapp.com/web/_aHR0cHM6Ly93d3cuanVzdGJ1aWxkLmxvbA==_/",
     "width": 900,
     "height": 900,
     "mobile": false,
@@ -486,7 +486,7 @@
    "1v1.LOL": {
     "name": "1v1.LOL",
     "service": "custom",
-    "url":"https://theduyr.herokuapp.com/web/_aHR0cHM6Ly8xdjEubG9s_/",
+    "url":"https://theduki.herokuapp.com/web/_aHR0cHM6Ly8xdjEubG9s_/",
     "width": 900,
     "height": 900,
     "mobile": false,
@@ -567,7 +567,7 @@
   "Subway Surfers": {
     "name":"Subway Surfers",
     "service":"custom",
-    "url":"https://theduyr.herokuapp.com/web/_aHR0cHM6Ly9zemhvbmcuNDM5OS5jb20=_/4399swf/upload_swf/ftp35/liuxinyu/20210202/jj2/index.html",
+    "url":"https://theduki.herokuapp.com/web/_aHR0cHM6Ly9zemhvbmcuNDM5OS5jb20=_/4399swf/upload_swf/ftp35/liuxinyu/20210202/jj2/index.html",
     "mobile":true,
     "premium":false
   }
