@@ -10,23 +10,79 @@
     <meta name="theme-color" content="#000000" />
   </head>
   <body>
-    <h1 class="center"><span class="basic">Premium</span><span style="display:inline;"><span class="premium hide">Premium</span></span> Collection</span></h1>
+    <h1 class="center"><span class="basic">Premium</span><span style="display:inline;"><span class="premium hide">Premium</span></span></span></h1>
+    <h3>How to get Premium:</h3>
     <p>
-      Below you can access Premium services in Zatoga - but you won't be able to click on it <span style="text-decoration:underline;">unless</span> you are a premium member - then you can click on the button and access the content.<br><br>
-      To become a Premium Member refer <span style="text-decoration:underline;">at least</span> two users to Zatoga and then contact us (in person) or at <span href"mailto:support@irom.ga" style="text-decoration:underline;">support@irom.ga</span> . <br><br> <b>The services below take some time to load so be patient and wait for it to load</b>
+      To become a Premium Member refer <span style="text-decoration:underline;">at least</span> two users to Zatoga and then contact us at <span style="text-decoration:underline;">support@zato.ga</span>. You can also give us a five star review on Google (using the email you signed up with) to get premium.<br>
+      <span><a target="_blank" href="mailto:support@zato.ga">Email Us</a></span>
+      <span><a target="_blank" href="https://g.page/r/CU5AkZs-c-2wEBI/review">Give us a 5-Star Review</a></span>
+      <br>
     </p>
-
+    <h3>Premium Games:</h3>
+    <p>
+      Below are the Premium Zatoga games - but you won't be able to use them <span style="text-decoration:underline;">unless</span> you are a premium member - then you can click on the button and access the content.<br><br>
+    </p>
+    <span id="completeCollection"></span>
     
-    <a class="disabled premium" style="color:white!important" onclick="if(!this.classList.contains('disabled'))location.href='view.html?app=telegram'">Telegram</a><br>
-    <a class="disabled premium" style="color:white!important" onclick="if(!this.classList.contains('disabled'))location.href='view.html?app=discord'">Discord</a><br>
-    <a class="disabled premium" style="color:white!important" onclick="if(!this.classList.contains('disabled'))location.href='view.html?app=kahoot-flooder'">Kahoot Flooder</a><br>
-    <a class="disabled premium" style="color:white!important" onclick="if(!this.classList.contains('disabled'))location.href='view.html?app=instagram'">Instagram (BETA)</a><br>
-    <a class="disabled premium" style="color:white!important" onclick="if(!this.classList.contains('disabled'))location.href='view.html?app=tiktok'">TikTok (BETA)</a><br>
+<script> 
+      async function loadGames(){
+        // Game Curation (from games.json)
+        let games = await fetch("/app/games.json");
+        games = await games.json();
+        gameArray = [];
+        for(var key in games) {
+          gameArray.push(key);
+        }
+        let gameElems = "";
+        let onMobile = /Mobi|Android/i.test(navigator.userAgent);
+        function addGame(game) {
+          // Clean up variables
+          if(!game["url"])game["url"]=""
+          if(!game["width"]) {
+            game["width"]=""
+          } else {
+            game["width"] = "&width=" + game["width"]
+          }
+          if(!game["height"]) {
+            game["height"]=""
+          } else {
+            game["height"] = "&height=" + game["height"]
+          }
+          let gameString = game["name"].toLowerCase().replace(/ /g, "-");
+          // Add html for link to variable
+          if(game["service"] == "offline") {
+            //gameElems += "<span class='game'><a onclick='if(window.loggedOut){window.loggedOut()} else if(!this.classList.contains(`disabled`))location.href=`/app/games/offline/" + gameString + "/`'><span class='playbutton'>▶️ </span>" + game["name"] + "</a></span>"; 
+          } else if(game["premium"]) {
+            latestGameCount++;
+            gameElems += "<span class='game' title='This game requires premium' style='display:block;'><a class='premium disabled' onclick='if(window.loggedOut){window.loggedOut()} else if(!this.classList.contains(`disabled`)){location.href=`/app/games/online.html?game=" + gameString + "&url=" + game["url"] + game["width"] + game["height"] + game["height"] + "`}else{location.href=`/app/premium/`}'><span class='playbutton'>▶️ </span>" + game["name"] + "</a></span>";
+          } else {
+            //gameElems += "<span class='game' title='This game requires internet' style='display:block;'><a class='internet disabled game' onclick='if(window.loggedOut){window.loggedOut()} else if(!this.classList.contains(`disabled`)){location.href=`/app/games/online.html?game=" + gameString + "&url=" + game["url"] + game["width"] + game["height"] + "`}else{alert(`This game requires internet connection. Reload if you still have issues while connected to internet.`)}'><span class='playbutton'>▶️ </span>" + game["name"] + "</a></span>";
+          }
+        }
+        latestGameCount = 0;
+        for(var count=gameArray.length-1;count>=0;count--) {
+          let game = games[gameArray[count]];
+          if(!onMobile || game["mobile"]) {
+            if(latestGameCount < 0 ) {
+              game["premium"] = true;
+            }
+            addGame(game);
+          }
+        }
+        // latestgamecount above- used to be 2, not 0.
+        document.getElementById("completeCollection").innerHTML = gameElems;
+        if(navigator.onLine) {
+          x = document.getElementsByClassName("internet");
+          for(var i=0;i<x.length;i++) {
+            x[i].classList.remove("disabled");
+          }
+        }
+      }
+      loadGames();
+    </script>
 
-
-    <a href="/app/" class="home">Go back home</a>
+    <span><a href="/app/" class="home">Go back home</a></span>
     <script src="/media/app.js"></script>
-    <script src="https://www.ls4.me/rating"></script>
   <script>
     resize(422, 539);
   </script>

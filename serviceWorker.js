@@ -1,8 +1,8 @@
-if(navigator.onLine) {
+if(navigator.onLine && false) {
   importScripts('https://arc.io/arc-sw-core.js');
 }
 
-var version = 2.75;
+var version = 2.76;
 
 let staticZatoga = "zatoga-v2";
 let assets = [
@@ -22,7 +22,6 @@ let assets = [
   "/media/Green_Check_Circle.png",
   "/favicon.ico",
   "/app/premium/",
-  "/app/premium/view.html",
   "/app/games/offline/minecraft---javascript-edition/",
   "/app/games/offline/doodle-jump/",
   "/app/games/offline/doodle-jump/background.png",

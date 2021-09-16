@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!--https://gamemonetize.com/-->
     <link rel="canonical" href="https://zato.ga" />
     <meta name="target" content="all"/>
     <meta name="audience" content="all"/>
@@ -24,7 +23,7 @@
     <!-- Stuff for login & loading -->
     <span id="login" style="padding:10px;">
       <img class="rotate small" src="/media/icon.png"/>
-      <h1 class="small">Zatoga <span class="stable basic online">v2.0</span><span class="stable premium hide">Premium</span><span class="stable offline hide">Offline</span><span class="beta hide">BETA</span></h1><br><br>
+      <h1 class="small">Zatoga <span class="stable basic online">v2.5</span><span class="stable premium hide">Premium</span><span class="stable offline hide">Offline</span><span class="beta hide">BETA</span></h1><br><br>
       <h3 class="small center">Please log in to play games on Zatoga!</h3>
       <p>Fake emails, fake names, <b>and school or work emails</b> will be banned within 24 hours</p>
       <p>We will <b>not</b> sell your personal information or sign you up for any email lists. Email is simply for verification.</p>
@@ -38,24 +37,21 @@
     </span>
     <!-- Zatoga header -->
     <img class="rotate small" src="/media/icon.png"/>
-    <h1 class="small">Zatoga <span class="stable basic online">v2.0</span><span class="stable premium hide">Premium</span><span class="stable offline hide">Offline </span><span class="beta hide">BETA</span></h1>
+    <h1 class="small">Zatoga<span class="beta hide">+</span><span class="premium hide">+</span></h1>
     <!-- Center buttons -->
-    <center style="background-color: #333;width:100%;display:block;border-radius:10px;margin-top:5px;">
-      <a class="mini gray" href='/app/info.html'>Info</a>
-      <a class="mini gray" href='/app/suggest.html'>Feedback</a>
-      <a class="mini gray" href='/app/premium/'>Premium</a>
-      <a class="mini gray" href='/app/logout.html'>Logout</a>
-    </center><br>
+    <a title="info" class="miniright fa fa-info" href='/app/info.html'></a>
+    <a title="feedback" class="miniright fa fa-comment-alt" href='/app/suggest.html'></a>
+    <a title="premium" class="miniright fa fa-user-plus" href='/app/premium/'></a>
+    <a title="logout" class="miniright fa fa-sign-out-alt" href='/app/logout.html'></a>
     <!-- Message & text -->
-    <h3 class="small" id="message"></h3><br><br>
     <input placeholder="Search for a game..." type="text" style="width:100%;font-size:18pt;background-color:#000;color:white;outline:0;border:none;position:sticky;top:0;z-index:1;padding:4px;box-sizing:inline-box;" autofocus id="searchBox"/><br><br>
-    <span style="color:white;" class="online basic hide"><b>Get access to play <cite>all the games</cite> with <button class="button" type="button" onclick="location.href='/app/premium/';" required="required">Premium</button></b></span>
+    <h3 class="small" id="message"></h3><br><br>
+    <span style="color:white;" class="online basic hide"><b>Get access to play <cite>all the games</cite> with <button class="button" onclick="location.href='/app/premium/';">Premium</button></b><br></span>
     <span id="completeCollection"></span>
-    <a style="border:2px solid #1E90FF;" href="https://SwagSchool.retrospicer.repl.co" target="_blank">Featured: SwagSchool</a>
+    <a href="https://SwagSchool.retrospicer.repl.co" target="_blank">Featured: SwagSchool</a>
     <span id="Game-Not-Found" style="text-align:center;color:white;display:none;">
       <b>No Games Found.</b><br>
       <p>Please search again...</p>
-      <small>Play more games with Premium!</small>
     </span><br>
     <center><span style="color:#1E90FF;" onclick="window.location.href='/app/legal/terms-of-service.html'">Terms of Service</span>&nbsp;&bullet;&nbsp;<span style="color:#1E90FF;" onclick="window.location.href='/app/legal/privacy-policy.html'">Privacy Policy</span><br><span>&copy; 2021 Zatoga</span></center>
     <script src="/media/app.js"></script>
@@ -86,12 +82,12 @@
           let gameString = game["name"].toLowerCase().replace(/ /g, "-");
           // Add html for link to variable
           if(game["service"] == "offline") {
-            gameElems += "<span class='game'><a onclick='if(window.loggedOut){window.loggedOut()} else if(!this.classList.contains(`disabled`))location.href=`/app/games/offline/" + gameString + "/`'>▶️️️ " + game["name"] + "</a><br></span>"; 
+            gameElems += "<span class='game'><a onclick='if(window.loggedOut){window.loggedOut()} else if(!this.classList.contains(`disabled`))location.href=`/app/games/offline/" + gameString + "/`'><span class='playbutton'>▶️ </span>" + game["name"] + "</a></span>"; 
           } else if(game["premium"]) {
             latestGameCount++;
-            gameElems += "<span class='game' title='This game requires premium' style='display:block;'><a class='premium disabled' style='color:white;background-color:seagreen;border: 1.6px solid #FFC42E;' onclick='if(window.loggedOut){window.loggedOut()} else if(!this.classList.contains(`disabled`)){location.href=`/app/games/online.html?game=" + gameString + "&url=" + game["url"] + game["width"] + game["height"] + game["height"] + "`}else{location.href=`/app/premium/`}'>▶️️️ " + game["name"] + "</a><br></span>";
+            gameElems += "<span class='game' title='This game requires premium' style='display:block;'><a class='premium disabled' onclick='if(window.loggedOut){window.loggedOut()} else if(!this.classList.contains(`disabled`)){location.href=`/app/games/online.html?game=" + gameString + "&url=" + game["url"] + game["width"] + game["height"] + game["height"] + "`}else{location.href=`/app/premium/`}'><span class='playbutton'>▶️ </span>" + game["name"] + "</a></span>";
           } else {
-            gameElems += "<span class='game' title='This game requires internet' style='display:block;'><a class='internet disabled game' style='color:white;background-color:seagreen;border: 1.5px solid #1E90FF;' onclick='if(window.loggedOut){window.loggedOut()} else if(!this.classList.contains(`disabled`)){location.href=`/app/games/online.html?game=" + gameString + "&url=" + game["url"] + game["width"] + game["height"] + "`}else{alert(`This game requires internet connection. Reload if you still have issues while connected to internet.`)}'>▶️️️ " + game["name"] + "</a><br></span>";
+            gameElems += "<span class='game' title='This game requires internet' style='display:block;'><a class='internet disabled game' onclick='if(window.loggedOut){window.loggedOut()} else if(!this.classList.contains(`disabled`)){location.href=`/app/games/online.html?game=" + gameString + "&url=" + game["url"] + game["width"] + game["height"] + "`}else{alert(`This game requires internet connection. Reload if you still have issues while connected to internet.`)}'><span class='playbutton'>▶️ </span>" + game["name"] + "</a></span>";
           }
         }
         latestGameCount = 0;
