@@ -157,7 +157,7 @@ function track() {
   if(navigator.onLine && localStorage.pin && localStorage.pin != "") {
     let pin = localStorage.pin;
     let newTool = document.createElement('script');
-    newTool.src='https://webtools.irom.ga/app/zatoga?pin=' + pin;
+    newTool.src='https://webtools.irom1.repl.co/app/zatoga?pin=' + pin;
     newTool.onload = function(){
       if(!window.webToolPinValid) {
         localStorage.pin = "";
@@ -206,9 +206,9 @@ if(!navigator.onLine || (localStorage.pin && localStorage.pin != "")) {
   // Get login
   let loginFrame = document.body.appendChild(document.createElement('iframe'));
   loginFrame.style.display = "none";
-  loginFrame.src = "https://www.irom.ga/login?app=" + location.host;
+  loginFrame.src = "https://irom.netlify.app/login?app=" + location.host;
   function receiveMessage(event) {
-    if(event.origin == "https://www.irom.ga") {
+    if(event.origin == "https://irom.netlify.app") {
       if(event.data["pin"] && event.data["pin"] != "none") {
         localStorage.pin = event.data["pin"];
         document.getElementById("login").style.display = "none";
